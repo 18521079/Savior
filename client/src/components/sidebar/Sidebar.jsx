@@ -1,4 +1,6 @@
 import "./sidebar.css";
+import {Users} from '../../dummyData'
+
 import {
   RssFeed,
   Chat,
@@ -10,6 +12,7 @@ import {
   Event,
   School,
 } from "@material-ui/icons";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 
 export default function Sidebar() {
@@ -19,11 +22,11 @@ export default function Sidebar() {
         <ul className="sidebarList">
           <li className="sidebarListItem">
             <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItemText">Feed</span>
+            <span className="sidebarListItemText">Phản hồi</span>
           </li>
           <li className="sidebarListItem">
             <Chat className="sidebarIcon" />
-            <span className="sidebarListItemText">Chats</span>
+            <span className="sidebarListItemText">Tin nhắn</span>
           </li>
           <li className="sidebarListItem">
             <PlayCircleFilledOutlined className="sidebarIcon" />
@@ -31,56 +34,28 @@ export default function Sidebar() {
           </li>
           <li className="sidebarListItem">
             <Group className="sidebarIcon" />
-            <span className="sidebarListItemText">Groups</span>
-          </li>
-          <li className="sidebarListItem">
-            <Bookmark className="sidebarIcon" />
-            <span className="sidebarListItemText">Bookmarks</span>
+            <span className="sidebarListItemText">Cộng đồng</span>
           </li>
           <li className="sidebarListItem">
             <HelpOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Questions</span>
+            <span className="sidebarListItemText">Câu hỏi</span>
           </li>
-          <li className="sidebarListItem">
-            <WorkOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Jobs</span>
-          </li>
+          
           <li className="sidebarListItem">
             <Event className="sidebarIcon" />
-            <span className="sidebarListItemText">Events</span>
+            <span className="sidebarListItemText">Sự kiện</span>
           </li>
           <li className="sidebarListItem">
             <School className="sidebarIcon" />
             <span className="sidebarListItemText">Courses</span>
           </li>
         </ul>
-        <button className="sidebarButton">Show More</button>
+        <button className="sidebarButton">Nhiều hơn</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li>
-          <img className='sidebarFriendImg' src='assets/person/2.jpeg'></img>
-          <span className='sidebarFriendName'> Khánh Ly</span>
-          </li>
-
-          <li>
-          <img className='sidebarFriendImg' src='assets/person/2.jpeg'></img>
-          <span className='sidebarFriendName'> Khánh Ly</span>
-          </li>
-
-          <li>
-          <img className='sidebarFriendImg' src='assets/person/2.jpeg'></img>
-          <span className='sidebarFriendName'> Khánh Ly</span>
-          </li>
-
-          <li>
-          <img className='sidebarFriendImg' src='assets/person/2.jpeg'></img>
-          <span className='sidebarFriendName'> Khánh Ly</span>
-          </li>
-
-          <li>
-          <img className='sidebarFriendImg' src='assets/person/2.jpeg'></img>
-          <span className='sidebarFriendName'> Khánh Ly</span>
-          </li>
+        {Users.map(u=>(
+        <CloseFriend key ={u.id} user={u}></CloseFriend>
+      ))}
 
         </ul>
       </div>

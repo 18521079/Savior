@@ -18,7 +18,7 @@ export default function Share() {
           <img className='shareProfileImg' src='./assets/person/1.jpeg'>
           </img>
           <input className="shareInput"
-           placeholder="What's in your mind Khanh Ly? "
+           placeholder="Bạn đang nghĩ gì? "
            
             
           />
@@ -29,23 +29,23 @@ export default function Share() {
           <div className="shareOptions">
             <label htmlFor="file" className="shareOption">
               <PermMedia htmlColor="tomato" className="shareIcon" />
-              <span className="shareOptionText">Photo or Video</span>
+              <span className="shareOptionText">Hình ảnh, video</span>
             </label>
             <div className="shareOption">
               <Label htmlColor="blue" className="shareIcon" />
-              <span className="shareOptionText">Tag</span>
+              <span className="shareOptionText">Gắn thẻ</span>
             </div>
             <div className="shareOption">
               <Room htmlColor="green" className="shareIcon" />
-              <span className="shareOptionText">Location</span>
+              <span className="shareOptionText">Địa điểm</span>
             </div>
             <div className="shareOption">
               <EmojiEmotions htmlColor="goldenrod" className="shareIcon" />
-              <span className="shareOptionText">Feelings</span>
+              <span className="shareOptionText">Cảm súc</span>
             </div>
           </div>
           <button className="shareButton" type="submit">
-            Share
+            Chia sẻ
           </button>
         </form>
       </div>

@@ -1,5 +1,6 @@
 import "./rightbar.css";
-
+import {Users} from '../../dummyData'
+import Online from '../online/Online.jsx'
 
 export default function Rightbar() {
    
@@ -7,69 +8,12 @@ export default function Rightbar() {
       <>
       <div className='rightbar'>
          <img className="rightbarAd" src="assets/ad.png" alt="" />
-        <h4 className="rightbarTitle">Online Friends</h4>
+        <h4 className="rightbarTitle">Người liên hệ</h4>
         <ul className="rightbarFriendList">
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
+        {Users.map(u=>(
+        <Online key ={u.id} user={u}></Online>
+      ))}
 
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
-
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
-
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
-
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
-
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
-
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
-
-          <div className='rightbarProfileImgContainer'>
-            <img className='rightbarProfileImg' src='./assets/person/1.jpeg'>
-            </img>
-            <span className='rightbarOnline'></span>
-            <span className='rightbarUserName'>Ly Ly Khanh</span>
-          </div>
          
         </ul>
         </div>
