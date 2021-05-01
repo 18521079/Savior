@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom"
+import Footer from '../layouts/Footer'
+import Navbar from '../layouts/Navbar'
 import Homecss from '../pages/homecss.css'
 
 class Contacts extends Component {
     render() {
         return (
+            
             <section>
-    
+                <Navbar></Navbar>
                 <div className="container">
                     <div className="well well-sm">
                         <h3 >
@@ -46,6 +49,7 @@ class Contacts extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer></Footer>
             </section>
         )
     }

@@ -5,17 +5,19 @@ import Topbar from "../../topbar/Topbar";
 import Sidebar from "../../sidebar/Sidebar";
 import Feed from "../../feed/Feed";
 import Rightbar from "../../rightbar/Rightbar";
+import Navbar from "../../layouts/Navbar";
+import Footer from "../../layouts/Footer";
 
 export default function Home() {
   return (
     <>
+    <Navbar></Navbar>
      <Topbar></Topbar>
     <div className='homeContainer'>
      
       <Sidebar></Sidebar>
       <Feed></Feed>
       <Rightbar></Rightbar>
-     
 
 
       </div>

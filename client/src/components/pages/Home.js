@@ -8,12 +8,16 @@ import logo4 from './images/library8.png'
 import logo5 from './images/library8.png'
 import logo6 from './images/psychological.jpg'
 import video from './images/book_video.mp4'
+import Navbar from '../layouts/Navbar'
+import Footer from '../layouts/Footer'
 
 
 
 class Home extends Component {
     render() {
         return (
+          <>
+          <Navbar></Navbar>
           <div className="row">
           <div className="container-fluid">
               <div id="slides" className="carousel slide" data-ride="carousel">
@@ -207,7 +211,10 @@ class Home extends Component {
 
 
               </div>
-          
+
+
+          <Footer></Footer>
+          </>
       
             )
     }

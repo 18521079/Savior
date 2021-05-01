@@ -11,21 +11,29 @@ import Contacts from './components/pages/Contacts'
 import NotFoundPage from './components/pages/NotFoundPage'
 import Search from './components/pages/Search'
 import Home1 from './components/pages/home/Home'
+import Profile from './components/pages/profile/Profile';
+import Login from './components/pages/login/Login';
+import Register from './components/pages/register/Register';
+
 
 class App extends Component
 {
   render(){
     return (
       <div>
-         <Navbar/>
+        
          <Switch>
-           <Route exact path= "/home" component={Home}/>
+         <Route exact path= "/" component={Login}/>
+           <Route path= "/home" component={Home}/>
+           <Route path= "/register" component={Register}/>
            <Route path= "/news" component={Home1}/>
            <Route path= "/contacts" component={Contacts}/>
            <Route path= "/search" component={Search}/>
+           <Route path= "/profile" component={Profile}/>
+
            <Route component={NotFoundPage}/>
          </Switch>
-         <Footer/>
+        
       </div>
     );
   }

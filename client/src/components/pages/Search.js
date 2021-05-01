@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Footer from '../layouts/Footer'
+import Navbar from '../layouts/Navbar'
 import Infor from '../pages/Intro'
 import homecss from '../pages/style.css'
 class Search extends Component {
@@ -6,6 +8,7 @@ class Search extends Component {
     render() {
         return (
             <div> 
+                <Navbar></Navbar>
                 <div className=' ml7 mt5'>
                     <div className='row'>
                         <div className='col-md-3'>
@@ -33,6 +36,8 @@ class Search extends Component {
                 </div>
 
                 <Infor></Infor>
+
+                <Footer></Footer>
 
             </div>
         )
