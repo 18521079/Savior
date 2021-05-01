@@ -42,7 +42,7 @@ export default function Login() {
               Đăng nhập
             </button>
             <span className="loginForgot mt-20">Quên mật khẩu?</span>
-            <button className="loginRegisterButton mb3">
+            <button className="loginRegisterButton mb5">
               Tạo tài khoản
             </button>
           </form>

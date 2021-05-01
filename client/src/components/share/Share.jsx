@@ -9,13 +9,13 @@ import {
 
 
 export default function Share() {
-  
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
   return (
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className='shareProfileImg' src='./assets/person/1.jpeg'>
+          <img className='shareProfileImg'  src={`${PF}person/1.jpeg`}>
           </img>
           <input className="shareInput"
            placeholder="Bạn đang nghĩ gì? "

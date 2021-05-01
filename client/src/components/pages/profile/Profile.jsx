@@ -28,12 +28,12 @@ export default function Profile() {
             <div className="profileCover">
               <img
                 className="profileCoverImg"
-                src='./assets/post/3.jpeg'
+                 src={`${PF}post/2.jpeg`}
                 alt=""
               />
               <img
                 className="profileUserImg"
-                src='./assets/person/1.jpeg'
+                src={`${PF}person/1.jpeg`}
                 alt=""
               />
             </div>

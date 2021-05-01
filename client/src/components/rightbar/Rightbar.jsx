@@ -4,7 +4,7 @@ import Online from '../online/Online.jsx'
 import Navbar from "../layouts/Navbar";
 
 export default function Rightbar({profile}) {
-   
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const HomeRightbar = () => {
     return (
       <>
@@ -28,15 +28,15 @@ export default function Rightbar({profile}) {
         <h4 className="rightbarTitle">Thông tin người dùng</h4>
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">City:</span>
-            <span className="rightbarInfoValue">HoChiMinh</span>
+            <span className="rightbarInfoKey">Thành phố:</span>
+            <span className="rightbarInfoValue">Ho Chi Minh</span>
           </div>
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">From:</span>
-            <span className="rightbarInfoValue">Thu Duc</span>
+            <span className="rightbarInfoKey">Quê Quán:</span>
+            <span className="rightbarInfoValue">Ho Chi Minh</span>
           </div>
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">Relationship:</span>
+            <span className="rightbarInfoKey">Tình trạng mối quan hệ:</span>
             <span className="rightbarInfoValue">
                 Độc thân
             </span>
@@ -48,7 +48,7 @@ export default function Rightbar({profile}) {
         
               <div className="rightbarFollowing">
                 <img
-                  src="assets/person/6.jpeg"
+                  src={`${PF}person/4.jpeg`}
                   alt=""
                   className="rightbarFollowingImg"
                 />
@@ -57,7 +57,7 @@ export default function Rightbar({profile}) {
 
               <div className="rightbarFollowing">
                 <img
-                  src="assets/person/1.jpeg"
+                  src={`${PF}person/6.jpeg`}
                   alt=""
                   className="rightbarFollowingImg"
                 />
@@ -66,7 +66,7 @@ export default function Rightbar({profile}) {
 
               <div className="rightbarFollowing">
                 <img
-                  src="assets/person/4.jpeg"
+                  src={`${PF}person/4.jpeg`}
                   alt=""
                   className="rightbarFollowingImg"
                 />
@@ -75,7 +75,7 @@ export default function Rightbar({profile}) {
 
               <div className="rightbarFollowing">
                 <img
-                  src="assets/person/2.jpeg"
+                  src={`${PF}person/5.jpeg`}
                   alt=""
                   className="rightbarFollowingImg"
                 />
@@ -84,7 +84,7 @@ export default function Rightbar({profile}) {
 
               <div className="rightbarFollowing">
                 <img
-                  src="assets/person/5.jpeg"
+                  src={`${PF}person/3.jpeg`}
                   alt=""
                   className="rightbarFollowingImg"
                 />
@@ -93,7 +93,7 @@ export default function Rightbar({profile}) {
 
               <div className="rightbarFollowing">
                 <img
-                  src="assets/person/7.jpeg"
+                  src={`${PF}person/2.jpeg`}
                   alt=""
                   className="rightbarFollowingImg"
                 />

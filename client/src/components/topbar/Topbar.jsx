@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Topbar() {
-  
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
@@ -23,8 +23,8 @@ export default function Topbar() {
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">Trang chủ</span>
-          <span className="topbarLink">Dòng thời gian</span>
+          <Link  to="/news"><span className="topbarLink">Diễn đàn</span></Link>
+          <Link to="/profile/:username" ><span className="topbarLink">Trang cá nhân</span></Link>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
@@ -40,7 +40,7 @@ export default function Topbar() {
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
-       <Link to="/profile" ><img className='topbarImg' src='./assets/person/1.jpeg'></img> </Link>
+       <Link to="/profile" ><img className='topbarImg'  src={`${PF}person/1.jpeg`}></img> </Link>
       </div>
     </div>
   );

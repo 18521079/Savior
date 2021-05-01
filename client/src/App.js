@@ -29,7 +29,7 @@ class App extends Component
            <Route path= "/news" component={Home1}/>
            <Route path= "/contacts" component={Contacts}/>
            <Route path= "/search" component={Search}/>
-           <Route path= "/profile" component={Profile}/>
+           <Route path= "/profile/:username" component={Profile}/>
 
            <Route component={NotFoundPage}/>
          </Switch>
