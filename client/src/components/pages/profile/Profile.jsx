@@ -8,6 +8,7 @@ import Topbar from "../../topbar/Topbar";
 import Sidebar from "../../sidebar/Sidebar";
 import Rightbar from "../../rightbar/Rightbar";
 import Feed from "../../feed/Feed";
+import Navbar from "../../layouts/Navbar";
 
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -18,6 +19,7 @@ export default function Profile() {
 
   return (
     <>
+     <Navbar></Navbar>
      <Topbar></Topbar>
      <div className="profile">
      <Sidebar/>
@@ -31,7 +33,7 @@ export default function Profile() {
               />
               <img
                 className="profileUserImg"
-                src='./assets/person/3.jpeg'
+                src='./assets/person/1.jpeg'
                 alt=""
               />
             </div>
@@ -42,7 +44,7 @@ export default function Profile() {
           </div>
           <div className="profileRightBottom">
           <Feed></Feed>
-          <Rightbar></Rightbar>
+          <Rightbar profile= 'profile'></Rightbar>
           </div>
           </div>
         </div>
