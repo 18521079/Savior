@@ -4,16 +4,19 @@ import Info from '../Info'
 import logo from './images/healthcare-consultant.jpg'
 import logo2 from './images/community.png' 
 import Homecss from '../pages/homecss.css'
+
 import logo4 from './images/library8.png'
 import logo5 from './images/library8.png'
 import logo6 from './images/psychological.jpg'
 import video from './images/book_video.mp4'
 import Navbar from '../layouts/Navbar'
 import Footer from '../layouts/Footer'
+ 
 
 
 
 class Home extends Component {
+
     render() {
         return (
           <>
@@ -228,7 +231,7 @@ class Home extends Component {
           <div className="faq-list">
             <ul>
               <li data-aos="fade-up">
-                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" className="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
+             <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" className="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-1" className="collapse show" data-parent=".faq-list">
                   <p>
                     Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -273,6 +276,11 @@ class Home extends Component {
       </section>{/* End Frequently Asked Questions Section */}
 
 
+      {/* ======= Testimonials Section ======= */}
+
+     
+      
+      {/* End Testimonials Section */}
         {/* ======= Doctors Section ======= */}
       <section id="doctors" className="doctors container-fluid padb70">
         <div className="container">
