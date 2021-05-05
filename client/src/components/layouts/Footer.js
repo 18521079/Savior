@@ -11,7 +11,7 @@ function Footer(){
 
             <div className="row logo-icon">
             <div className="col-lg-6 col-md-6 mb-6 mb-md-0">
-                  <img style={{width:'180px'} } src={logo} />
+            <h2>Savious</h2>
                 </div>
 
                 <div className="col-lg-6 col-md-6 mb-6 mb-md-0">
