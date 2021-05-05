@@ -21,7 +21,7 @@ export default function Profile() {
     <>
      <Navbar></Navbar>
      <Topbar></Topbar>
-     <div className="profile">
+     <div style={{background:'white'}} className="profile">
      <Sidebar/>
         <div className="profileRight">
           <div className="profileRightTop">
