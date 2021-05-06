@@ -57,8 +57,9 @@ function Navbar(){
           Tâm lý
         </a>
         <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-          <li><Link className="dropdown-item" to="/search">Tra cứu</Link></li>
           <li><Link className="dropdown-item" to="/books_management">Gặp chuyên gia</Link></li>
+          <li><Link className="dropdown-item" to="/search">Tra cứu</Link></li>
+         
         </ul>
       </li>
       </li>

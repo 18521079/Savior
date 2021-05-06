@@ -13,7 +13,7 @@ export default function Home() {
     <>
     <Navbar></Navbar>
      <Topbar></Topbar>
-    <div style={{background:'white'}}className='homeContainer'>
+    <div className='homeContainer'>
      
       <Sidebar></Sidebar>
       <Feed></Feed>

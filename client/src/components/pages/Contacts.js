@@ -8,7 +8,7 @@ class Contacts extends Component {
     render() {
         return (
             
-            <section style={{background:'white'}}>
+            <section>
                 <Navbar></Navbar>
                 <div className="container">
                     <div className="well well-sm">
