@@ -401,25 +401,22 @@ class Home extends Component {
 
           <div className="col-md-4">
             <div className="card card-1 card-new">
-            <h4>Về sức khỏe</h4>
-              <p>Tabs, buttons, inputs, lists, more! A library
-                of mobile UI components.</p>
+            <h5>Về sức khỏe</h5>
+              <p>Nếu bạn cần tìm tin tức về y khoa, sức khỏe. Đây là nơi dành cho bạn.</p>
             </div>
           </div>
 
 
           <div className="col-md-4">
             <div className="card card-2 card-new">
-              <h4>Tư vấn tâm lý</h4>
-              <p>Tabs, buttons, inputs, lists, more! A library
-                of mobile UI components.</p>
+              <h5>Tư vấn tâm lý</h5>
+              <p>Nhiều vấn đề về tâm lý nghiêm trọng có thể không được phát hiện sớm. </p>
             </div>
           </div>
           <div className="col-md-4">
             <div className="card card-3 card-new">
-            <h4>Trợ giúp</h4>
-              <p>Tabs, buttons, inputs, lists, more! A library
-                of mobile UI components.</p>
+            <h5>Bản tin</h5>
+              <p>Nơi bạn có thể thoải mái trao đổi, chia sẻ với các thành viên trong diễn đàn</p>
             </div>
           </div>
         </div>
