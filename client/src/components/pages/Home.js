@@ -103,10 +103,17 @@ class Home extends Component {
 
 {/* ======= Bệnh phổ biến ======= */}    
      <div style={{background:'white'}} className="container-fluid">
-     <div className="most_popular mb-100" style={{fontFamily:'Barlow', fontSize:'40px', color:'black'}}><h3>Bệnh thường gặp mùa hè</h3></div>
+                      <div className="row">
+                        <div className="col-lg-3 ml130 mt70">
+                          <div className="d-flex position-relative float-left">
+                            <h1 className="section-title">Bệnh phổ biến</h1>
+                          </div>
+                        </div>
+                      </div>
+
      </div >
            <div style={{background:'white'}} className="container">
-              <div style={{background:'white'}} className="row">
+             {/* <div style={{background:'white'}} className="row">
                
               <InforConSumer>
                {
@@ -118,16 +125,96 @@ class Home extends Component {
                }
                </InforConSumer>
               </div>
+              */}
+
+
+                    <div className="editors-news mt3">
+                      <div className="row">
+                        <div className="col-lg-6  mb-5 mb-sm-2">
+                          <div className="position-relative image-hover">
+                            <img src="assets/images/news/covid.png" className="img-fluid" alt="world-news" />
+                            <span className="thumb-title">Sức khỏe</span>
+                          </div>
+                          <h3 className="font-weight-600 mt-3">
+                            Phòng ngừa Covid, những điều bạn cần biết?
+                          </h3>
+                          <p className="fs-15 font-weight-normal">
+                            Bạn có thể xem toàn bộ thông tin về bệnh Covid-19 tại đây!. Dịch Covid-19 do virus SARS-CoV-2 hiện đã lan tới 209 quốc gia và vùng lãnh thổ. Vậy để phòng ngừa Covid-19, bạn nên và không nên làm gì?
+                          </p>
+                        </div>
+                        <div className="col-lg-6  mb-5 mb-sm-2">
+                          <div className="row">
+                            <div className="col-sm-6  mb-5 mb-sm-2">
+                              <div className="position-relative image-hover">
+                                <img src="images/dengue.png" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Điều trị sốt xuất huyết
+                              </h6>
+                              <h8 className="fs-15 font-weight-normal">
+                              Là một bệnh do virus Dengue gây ra, lây truyền...
+                              </h8>
+                            </div>
+                            <div className="col-sm-6  mb-5 mb-sm-2">
+                              <div className="position-relative image-hover">
+                                <img src="images/flu.png" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Cảm cúm có nguy hiểm?
+                              </h6>
+                              <p className="fs-15 font-weight-normal">
+                              Đến hẹn lại lên, mỗi năm vào mùa dịch cúm lây lan...
+                              </p>
+                            </div>
+                          </div>
+                          <div className="row mt-3">
+                            <div className="col-sm-6  mb-5 mb-sm-2">
+                              <div className="position-relative image-hover">
+                                <img src="assets/images/dashboard/star-magazine-7.jpg" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Japan cancels  virus
+                              </h6>
+                              <p className="fs-15 font-weight-normal">
+                                Lorem Ipsun the industry' been the industry' dummy
+                              </p>
+                            </div>
+                            <div className="col-sm-6">
+                              <div className="position-relative image-hover">
+                                <img src="assets/images/dashboard/star-magazine-8.jpg" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Classic cars recles
+                              </h6>
+                              <p className="fs-15 font-weight-normal">
+                                Lorem Ipsu industry'stry's standard dummy text
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+            
               </div>
 
             
 
 {/* ======= Departments Section ======= */}
-<section style={{background:'white'}} id="departments" className="departments mt180 container ">
+<section style={{background:'white'}} id="departments" className="departments mt5 container ">
         <div className="container">
-          <div className="section-title">
-            <h3>Các vấn đề tâm lý</h3>
-          </div>
+        <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left">
+                            <h1 className="section-title">Các vấn đề tâm lý</h1>
+                          </div>
+                        </div>
+                      </div>
+
           <div className="row">
             <div className="col-lg-3">
               <ul className="nav nav-tabs flex-column">
@@ -223,11 +310,21 @@ class Home extends Component {
  {/* ======= Frequently Asked Questions Section ======= */}
  <section style={{background:'#F0F8FF'}} id="faq" className="faq section-bg mt70 container-fluid padb70">
         <div className="container">
-          <div className="section-title mt3">
+         {/* <div className="section-title mt3">
             <h3>Các câu hỏi thường gặp</h3>
             <p>Khi gặp các vấn đề về sức khỏe, tâm lý hãy liên hệ với chúng tôi.
             Chúng tôi luôn sẵn sàng trả lời câu hỏi của bạn.</p>
           </div>
+            */}
+
+                      <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left mt5 ml3">
+                            <h1 className="section-title">Câu hỏi phổ biến</h1>
+                          </div>
+                        </div>
+                      </div>
+
           <div className="faq-list">
             <ul>
               <li data-aos="fade-up">
@@ -284,10 +381,13 @@ class Home extends Component {
         {/* ======= Doctors Section ======= */}
       <section id="doctors" className="doctors container-fluid padb70">
         <div className="container">
-          <div className="section-title padt50">
-            <h3>Các chuyên gia hàng đầu</h3>
-            <p>Với nhiều năm kinh nghiệm trong lĩnh vực tư vấn tâm lý, sức khỏe.</p>
-          </div>
+        <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left mt5 ml3">
+                            <h1 className="section-title">Các chuyên gia</h1>
+                          </div>
+                        </div>
+                      </div>
           <div className="row">
             <div className="col-lg-6">
               <div className="member d-flex align-items-start">
@@ -425,9 +525,13 @@ class Home extends Component {
                {/* ======= Contact Section ======= */}
       <section  style={{background:'white'}} id="contact" className="contact container-fluid">
         <div className="container-fluid">
-          <div style={{marginLeft:'100px'}} className="section-title mt5 mb3">
-            <h3>Liên hệ</h3>
-          </div>
+        <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left mt5 ml5">
+                            <h1 className="section-title">Liên hệ</h1>
+                          </div>
+                        </div>
+                      </div>
         </div>
         <div>
           <iframe style={{border: 0, width: '100%', height: '350px'}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameBorder={0} allowFullScreen />

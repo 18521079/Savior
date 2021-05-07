@@ -16,6 +16,10 @@ html, body {
 .ml{
     margin-top: 50px;
 }
+.ml130
+{
+	margin-left: 130px;
+}
 .padb70
 {
 	padding-bottom: 70px;
@@ -1483,5 +1487,73 @@ td img{
 	  position: static;
 	  left: auto;
 	}
+  }
+  
+/*bệnh phổ biến*/
+
+.image-hover {
+	overflow: hidden;
+  }
+  
+  .image-hover img,
+  .image-hover .thumb-title {
+	transition: transform 0.4s;
+	/* Animation */
+  }
+  
+  .image-hover:hover img {
+	transform: scale(1.25);
+  }
+  
+  .image-hover:hover .thumb-title {
+	background: #1adde4;
+  }
+  
+  .news-post-wrapper {
+	width: 915px;
+	margin: 0 auto;
+	margin-top: 50px;
+  }
+  
+  @media (max-width: 999px) {
+	.news-post-wrapper {
+	  width: 100%;
+	}
+  }
+  
+  .thumb-title {
+	padding: 14px 24px;
+	background: #000;
+	font-size: 18px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.33;
+	letter-spacing: normal;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  }
+
+  .section-title {
+	font-size: 28px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.14;
+	letter-spacing: normal;
+	color: #3e8177;
+	margin-bottom: 22px;
+  }
+  
+  .section-title:after {
+	content: "";
+	width: 50px;
+	height: 2px;
+	background: #3e8177;
+	position: absolute;
+	right: -60px;
+	top: 14px;
   }
   
