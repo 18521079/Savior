@@ -347,9 +347,9 @@ class Home extends Component {
                 <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-3" className="collapsed">Tại sao người khác dễ dàng có được tình yêu, còn tôi thì không? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-3" className="collapse" data-parent=".faq-list">
                   <p>
-                        Thay vì mong chờ tình yêu đến sưởi ấm trái tim cô đơn của mình, bạn hãy mang tình yêu đến một trái tim cô đơn khác.
+                        Thay vì ngồi chờ tình yêu đến sưởi ấm trái tim cô đơn của mình, bạn hãy mang tình yêu đến một trái tim cô đơn khác.
 
-                        Rồi một ngày, tình yêu sẽ tự dưng mà xuất hiện đến bên bạn thôi.
+                        Rồi một ngày đẹp trời, tình yêu sẽ tự dưng mà xuất hiện đến bên bạn thôi. "Nói dối đấy ai có đâu mà biết"
                   </p>
                 </div>
               </li>

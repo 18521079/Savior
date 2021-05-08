@@ -4,7 +4,10 @@ import {  useEffect } from "react";
 import {  useState } from "react";
 import axios from "axios";
 import { format } from "timeago.js";
-
+import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
+import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
+import ModeCommentOutlinedIcon from '@material-ui/icons/ModeCommentOutlined';
+import { colors } from "@material-ui/core";
 
 export default function Post({ post }) {
   const [like, setLike] = useState(post.likes.length);
@@ -47,24 +50,20 @@ export default function Post({ post }) {
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">{post?.desc}</span>
+          <span className="postText ml3">{post?.desc}</span>
           <img className="postImg" src={PF+post.img} />
         </div>
         <div className="postBottom">
-          <div className="postBottomLeft">
-            <img
-               className="likeIcon"
-               src={`${PF}like.png`}
-              onClick={likeHandler}
-            />
-            <img
+          <div className="postBottomLeft ml3">
+            <FavoriteBorderRoundedIcon
               className="likeIcon"
               src={`${PF}heart.png`}
               onClick={likeHandler}
-            />
+            ></FavoriteBorderRoundedIcon>
             <span className="postLikeCounter"> {like} người thích điều này</span>
           </div>
           <div className="postBottomRight">
+          <ModeCommentOutlinedIcon></ModeCommentOutlinedIcon>
             <span className="postCommentText"> {post.comment} bình luận</span>
           </div>
         </div>

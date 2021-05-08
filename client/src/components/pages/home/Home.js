@@ -28,6 +28,10 @@ export default function Home() {
       <Feed></Feed>
       </div>
 
+      <div style ={{ height: 'calc(100vh - 50px)',  position: 'sticky',top: '470px'}}className='col-md-1 mt150'>
+      <img style={{width:'76px', height:'70px'}} src='images/mess.png'/>
+      </div>
+
       </div>
       </div>
     </>
