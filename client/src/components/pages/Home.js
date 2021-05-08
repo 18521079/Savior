@@ -103,10 +103,17 @@ class Home extends Component {
 
 {/* ======= Bệnh phổ biến ======= */}    
      <div style={{background:'white'}} className="container-fluid">
-     <div className="most_popular mb-100" style={{fontFamily:'Barlow', fontSize:'40px', color:'black'}}><h3>Bệnh thường gặp mùa hè</h3></div>
+                      <div className="row">
+                        <div className="col-lg-3 ml130 mt70">
+                          <div className="d-flex position-relative float-left">
+                            <h1 className="section-title">Bệnh phổ biến</h1>
+                          </div>
+                        </div>
+                      </div>
+
      </div >
            <div style={{background:'white'}} className="container">
-              <div style={{background:'white'}} className="row">
+             {/* <div style={{background:'white'}} className="row">
                
               <InforConSumer>
                {
@@ -118,16 +125,96 @@ class Home extends Component {
                }
                </InforConSumer>
               </div>
+              */}
+
+
+                    <div className="editors-news mt3">
+                      <div className="row">
+                        <div className="col-lg-6  mb-5 mb-sm-2">
+                          <div className="position-relative image-hover">
+                            <img src="assets/images/news/covid.png" className="img-fluid" alt="world-news" />
+                            <span className="thumb-title">Sức khỏe</span>
+                          </div>
+                          <h3 className="font-weight-600 mt-3">
+                            Phòng ngừa Covid, những điều bạn cần biết?
+                          </h3>
+                          <p className="fs-15 font-weight-normal">
+                            Bạn có thể xem toàn bộ thông tin về bệnh Covid-19 tại đây!. Dịch Covid-19 do virus SARS-CoV-2 hiện đã lan tới 209 quốc gia và vùng lãnh thổ. Vậy để phòng ngừa Covid-19, bạn nên và không nên làm gì?
+                          </p>
+                        </div>
+                        <div className="col-lg-6  mb-5 mb-sm-2">
+                          <div className="row">
+                            <div className="col-sm-6  mb-5 mb-sm-2">
+                              <div className="position-relative image-hover">
+                                <img src="images/dengue.png" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Điều trị sốt xuất huyết
+                              </h6>
+                              <h8 className="fs-15 font-weight-normal">
+                              Là một bệnh do virus Dengue gây ra, lây truyền...
+                              </h8>
+                            </div>
+                            <div className="col-sm-6  mb-5 mb-sm-2">
+                              <div className="position-relative image-hover">
+                                <img src="images/flu.png" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Cảm cúm có nguy hiểm?
+                              </h6>
+                              <p className="fs-15 font-weight-normal">
+                              Đến hẹn lại lên, mỗi năm vào mùa dịch cúm lây lan...
+                              </p>
+                            </div>
+                          </div>
+                          <div className="row mt-3">
+                            <div className="col-sm-6  mb-5 mb-sm-2">
+                              <div className="position-relative image-hover">
+                                <img src="assets/images/dashboard/star-magazine-7.jpg" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Bí kíp trị cảm lạnh hiệu quả.
+                              </h6>
+                              <p className="fs-15 font-weight-normal">
+                              Cảm lạnh là tình trạng rất phổ biến và hẳn ai cũng...
+                              </p>
+                            </div>
+                            <div className="col-sm-6">
+                              <div className="position-relative image-hover">
+                                <img src="assets/images/news/fever.png" className="img-fluid" alt="world-news" />
+                                <span className="thumb-title">Sức khỏe</span>
+                              </div>
+                              <h6 className="font-weight-600 mt-3">
+                                Điều trị sốt siêu vi tại nhà.
+                              </h6>
+                              <p className="fs-15 font-weight-normal">
+                              Cách phân biệt sốt siêu vi và sốt xuất huyết sẽ trở nên...
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+            
               </div>
 
             
 
 {/* ======= Departments Section ======= */}
-<section style={{background:'white'}} id="departments" className="departments mt180 container ">
+<section style={{background:'white'}} id="departments" className="departments mt5 container ">
         <div className="container">
-          <div className="section-title">
-            <h3>Các vấn đề tâm lý</h3>
-          </div>
+        <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left">
+                            <h1 className="section-title">Các vấn đề tâm lý</h1>
+                          </div>
+                        </div>
+                      </div>
+
           <div className="row">
             <div className="col-lg-3">
               <ul className="nav nav-tabs flex-column">
@@ -144,7 +231,7 @@ class Home extends Component {
                   <a className="nav-link" data-toggle="tab" href="#tab-4">Rối loạn trầm cảm</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" data-toggle="tab" href="#tab-5">Mâu thuẫn trong mối quan hệ</a>
+                  <a className="nav-link" data-toggle="tab" href="#tab-5">Xây dựng mối quan hệ</a>
                 </li>
               </ul>
             </div>
@@ -201,12 +288,12 @@ class Home extends Component {
                 <div className="tab-pane" id="tab-5">
                   <div className="row">
                     <div className="col-lg-8 details order-2 order-lg-1">
-                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                      <p className="font-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                      <h3>Kỹ năng xây dựng mối quan hệ</h3>
+                      <p className="font-italic">Điều không thể thiếu nếu muốn nhanh thăng tiến.</p>
+                      <p>Nếu có kỹ năng xây dựng mối quan hệ tốt, bạn sẽ có nhiều lợi ích trong công việc và cuộc sống. Vì vậy, làm thế nào để duy trì và phát triển những mối quan hệ là chủ đề được nhiều người quan tâm.</p>
                     </div>
                     <div className="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/img/departments-5.jpg" alt="" className="img-fluid" />
+                      <img style ={{width:'200px', height:'210px'}}src="assets/images/news/mqp.png"  alt="" className="img-fluid" />
                     </div>
                   </div>
                 </div>
@@ -223,50 +310,62 @@ class Home extends Component {
  {/* ======= Frequently Asked Questions Section ======= */}
  <section style={{background:'#F0F8FF'}} id="faq" className="faq section-bg mt70 container-fluid padb70">
         <div className="container">
-          <div className="section-title mt3">
+         {/* <div className="section-title mt3">
             <h3>Các câu hỏi thường gặp</h3>
             <p>Khi gặp các vấn đề về sức khỏe, tâm lý hãy liên hệ với chúng tôi.
             Chúng tôi luôn sẵn sàng trả lời câu hỏi của bạn.</p>
           </div>
+            */}
+
+                      <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left mt5 ml3">
+                            <h1 className="section-title">Câu hỏi phổ biến</h1>
+                          </div>
+                        </div>
+                      </div>
+
           <div className="faq-list">
             <ul>
               <li data-aos="fade-up">
-             <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" className="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
+             <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" className="collapse" href="#faq-list-1">Làm sao để vục dậy tinh thần sau khi chia tay? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-1" className="collapse show" data-parent=".faq-list">
                   <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  Sau khi chia tay bạn rất dễ bị mất cân bằng, bạn tổn thương, chán nản và thất vọng. Cách tốt nhất là đừng tự dằn vặt bản thân, bỏ qua quá khứ, tạo những niềm vui mới, chăm chút đến ngoại hình của mình nhiều hơn.
                   </p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay={100}>
-                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-2" className="collapsed">Feugiat scelerisque varius morbi enim nunc? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
+                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-2" className="collapsed">Cách giảm stress để tập trung học tập? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-2" className="collapse" data-parent=".faq-list">
                   <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Chắc hẳn sự mệt mỏi, căng thẳng hay chán nản đều là thứ mà chúng ta gặp phải. Vậy khi gặp phải Stress nên thư giãn nghỉ ngơi, có chế độ dinh dưỡng hợp lý, giải tỏa tâm sự, tập luyện thể dục, thể thao.
                   </p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay={200}>
-                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-3" className="collapsed">Dolor sit amet consectetur adipiscing elit? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
+                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-3" className="collapsed">Tại sao người khác dễ dàng có được tình yêu, còn tôi thì không? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-3" className="collapse" data-parent=".faq-list">
                   <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                        Thay vì mong chờ tình yêu đến sưởi ấm trái tim cô đơn của mình, bạn hãy mang tình yêu đến một trái tim cô đơn khác.
+
+                        Rồi một ngày, tình yêu sẽ tự dưng mà xuất hiện đến bên bạn thôi.
                   </p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay={300}>
-                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-4" className="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
+                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-4" className="collapsed">Ngồi giữa bạn bè mà vẫn thấy lạc lõng chẳng hiểu vì sao? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-4" className="collapse" data-parent=".faq-list">
                   <p>
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                  Ai cũng từng ít nhất một lần trải qua những ngày tâm trạng ẩm ương, chợt buồn chợt âu sầu, cô đơn. Chúng ta cảm thấy mình lạc lõng vô cùng giữa bộn bề náo nhiệt. Nỗi cô đơn từ đâu mà có là câu hỏi nhiều người chẳng thể đưa ra đáp án, chỉ biết cảm giác cô độc, bơ vơ như mất đi điểm tựa ấy dần trở thành một gia vị không thể thiếu của những người trẻ.
                   </p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-delay={400}>
-                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-5" className="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
+                <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-5" className="collapsed"> Làm sao để điều trị bệnh viêm da do tiếp xúc kiến ba khoang? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-5" className="collapse" data-parent=".faq-list">
                   <p>
-                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                  Việc điều trị viêm da do kiến khoang không khó nhưng nếu không đúng có thể gây viêm nặng hơn, nhiễm khuẩn thứ phát và loét. Phương pháp điều trị tùy theo tổn thương và chủ yếu dùng thuốc bôi tại chỗ kèm thuốc kháng histamin đường uống.
                   </p>
                 </div>
               </li>
@@ -284,10 +383,13 @@ class Home extends Component {
         {/* ======= Doctors Section ======= */}
       <section id="doctors" className="doctors container-fluid padb70">
         <div className="container">
-          <div className="section-title padt50">
-            <h3>Các chuyên gia hàng đầu</h3>
-            <p>Với nhiều năm kinh nghiệm trong lĩnh vực tư vấn tâm lý, sức khỏe.</p>
-          </div>
+        <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left mt5 ml3">
+                            <h1 className="section-title">Các chuyên gia</h1>
+                          </div>
+                        </div>
+                      </div>
           <div className="row">
             <div className="col-lg-6">
               <div className="member d-flex align-items-start">
@@ -326,8 +428,8 @@ class Home extends Component {
                 <div className="pic"><img src="assets/doctors/doctors-3.jpg" className="img-fluid" alt="" /></div>
                 <div className="member-info">
                   <h4>William Anderson</h4>
-                  <span>Cardiology</span>
-                  <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                  <span>Bệnh viện Đại học Y dược TPHCM</span>
+                  <p>5 năm kinh nghiệm làm việc tại khoa tâm lý</p>
                   <div className="social">
                     <a href><i className="fab fa-facebook-f" /></a>
                     <a href><i className="fab fa-twitter" /></a>
@@ -342,8 +444,8 @@ class Home extends Component {
                 <div className="pic"><img src="assets/doctors/doctors-4.jpg" className="img-fluid" alt="" /></div>
                 <div className="member-info">
                   <h4>Amanda Jepson</h4>
-                  <span>Neurosurgeon</span>
-                  <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                  <span>Viện y tế cộng đồng Tp.HCM</span>
+                  <p>10 năm nghiên cứu về sức khỏe</p>
                   <div className="social">
                     <a href><i className="fab fa-facebook-f" /></a>
                     <a href><i className="fab fa-twitter" /></a>
@@ -425,9 +527,13 @@ class Home extends Component {
                {/* ======= Contact Section ======= */}
       <section  style={{background:'white'}} id="contact" className="contact container-fluid">
         <div className="container-fluid">
-          <div style={{marginLeft:'100px'}} className="section-title mt5 mb3">
-            <h3>Liên hệ</h3>
-          </div>
+        <div className="row">
+                        <div className="col-lg-3">
+                          <div className="d-flex position-relative float-left mt5 ml5">
+                            <h1 className="section-title">Liên hệ</h1>
+                          </div>
+                        </div>
+                      </div>
         </div>
         <div>
           <iframe style={{border: 0, width: '100%', height: '350px'}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameBorder={0} allowFullScreen />

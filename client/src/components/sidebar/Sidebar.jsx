@@ -13,11 +13,13 @@ import {
   School,
 } from "@material-ui/icons";
 import CloseFriend from "../closeFriend/CloseFriend";
+import SearchLeft from "../searchLeft/SearchLeft";
 
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
+      <SearchLeft></SearchLeft>
       <div className="sidebarWrapper">
         <ul className="sidebarList">
           <li className="sidebarListItem">

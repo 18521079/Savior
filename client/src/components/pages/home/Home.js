@@ -7,19 +7,28 @@ import Feed from "../../feed/Feed";
 import Rightbar from "../../rightbar/Rightbar";
 import Navbar from "../../layouts/Navbar";
 import Footer from "../../layouts/Footer";
+import SearchLeft from "../../searchLeft/SearchLeft";
 
 export default function Home() {
   return (
     <>
     <Navbar></Navbar>
      <Topbar></Topbar>
-    <div style={{background:'white'}}className='homeContainer'>
+    <div style={{background:'white'}}className=''>
      
-      <Sidebar></Sidebar>
+      <div className='row'>
+      <div className='col-md-4'>
+      <SearchLeft></SearchLeft>
+
+      
+
+      </div>
+
+      <div className='col-md-7'>
       <Feed></Feed>
-      <Rightbar></Rightbar>
+      </div>
 
-
+      </div>
       </div>
     </>
   );

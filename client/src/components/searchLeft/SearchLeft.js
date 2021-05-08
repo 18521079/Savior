@@ -18,9 +18,13 @@ export default function SearchLeft() {
 
       {/* Popular News Start */}
 <div className="pb-3">
-  <div className=" py-2 px-4 mb-3">
-    <h5 className="m-0">Phổ biến nhất</h5>
-  </div>
+                      <div className="row">
+                        <div className="ml5">
+                          <div className="d-flex position-relative float-left">
+                            <h1 className="section-title">Phổ biến nhất</h1>
+                          </div>
+                        </div>
+                      </div>
 
   <div className="position-relative overflow-hidden ml3 mb3" style={{"height":"220px", width:'365px'}}>
   <img className="img-fluid w-100 h-100" src="assets/img/tramcam.jpg"  style={{"object-fit":"cover"}} />

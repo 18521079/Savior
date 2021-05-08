@@ -62,7 +62,7 @@ router.put("/:id/like", async (req, res) => {
 // get a post
 router.get("/:id", async (req, res) => {
     try {
-        const post = await Post.findById(req.params.id);
+        const post = await Post.findById(req.params.id);    // lấy 1 post theo PostId
         res.status(200).json(post);
     } catch (err) {
         res.status(500).json(err);
@@ -72,16 +72,32 @@ router.get("/:id", async (req, res) => {
 // get timeline posts
 router.get("/timeline/all", async (req, res) => {
     try {
-        const currentUser = await User.findById(req.body.userId);
+        const currentUser = await User.findById(req.body.userId);   // timeline của 1 user
         const userPosts = await Post.find({ userId: currentUser._id });
         const friendPosts = await Promise.all(
-            currentUser.followings.map((friendId) => {
+            currentUser.followings.map((friendId) => {     // lay cua user va nguoi ma user follow
                 return Post.find({ userId: friendId });
             })
         );
         res.json(userPosts.concat(...friendPosts))
     } catch (err) {
         res.status(500).json(err);
+    }
+});
+
+// get timeline posts // chay ok 
+router.get("/timeline/:userId", async (req, res) => {
+    try {
+        const currentUser = await User.findById(req.params.userId);   // timeline của 1 user
+        const userPosts = await Post.find({ userId: currentUser._id });
+        const friendPosts = await Promise.all(
+            currentUser.followings.map((friendId) => {     // lay cua user va nguoi ma user follow
+                return Post.find({ userId: friendId });
+            })
+        );
+        res.status(200).json(userPosts.concat(...friendPosts))
+    } catch (err) {
+        res.status(500).json(err); 
     }
 });
 module.exports = router;
