@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       <div className='col-md-7'>
-      <Feed></Feed>
+      <Feed username="thong"></Feed>
       </div>
 
       <div style ={{ height: 'calc(100vh - 50px)',  position: 'sticky',top: '470px'}}className='col-md-1 mt150'>
