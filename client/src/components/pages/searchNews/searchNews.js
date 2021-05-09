@@ -2,7 +2,6 @@
 import Intro from "../Intro";
 import "./searchNews.css";
 
-
 export default function SearchNews() {
   return (
     <div className="sidebar">

@@ -15,6 +15,7 @@ import Profile from './components/pages/profile/Profile';
 import Login from './components/pages/login/Login';
 import Register from './components/pages/register/Register';
 import Details from './components/pages/Details';
+import Messenger from './components/messenger/messenger';
 
 
 class App extends Component
@@ -32,7 +33,9 @@ class App extends Component
            <Route path= "/search" component={Search}/>
            <Route path= "/profile/:username" component={Profile}/>
            <Route path= "/details" component={Details}/>
+           <Route path= "/messenger" component={Messenger}/>
            <Route component={NotFoundPage}/>
+           
          </Switch>
         
       </div>

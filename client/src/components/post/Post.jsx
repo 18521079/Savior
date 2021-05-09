@@ -8,6 +8,7 @@ import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded'
 import ThumbUpAltOutlinedIcon from '@material-ui/icons/ThumbUpAltOutlined';
 import ModeCommentOutlinedIcon from '@material-ui/icons/ModeCommentOutlined';
 import { colors } from "@material-ui/core";
+import {Link} from 'react-router-dom';
 
 export default function Post({ post }) {
   const [like, setLike] = useState(post.likes.length);
@@ -35,10 +36,12 @@ export default function Post({ post }) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            
+            <Link to={`profile/${user.username}`}>
               <img className="shareProfileImg" src={user.profilePicture || PF + "person/noAvatar.png"}
                
               />
+
+            </Link>
             
             <span className="postUsername">
               {user.username}

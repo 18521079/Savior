@@ -4,7 +4,7 @@ import Info from '../Info'
 import logo from './images/healthcare-consultant.jpg'
 import logo2 from './images/community.png' 
 import Homecss from '../pages/homecss.css'
-
+import {Link} from 'react-router-dom';
 import logo4 from './images/library8.png'
 import logo5 from './images/library8.png'
 import logo6 from './images/psychological.jpg'
@@ -131,10 +131,12 @@ class Home extends Component {
                     <div className="editors-news mt3">
                       <div className="row">
                         <div className="col-lg-6  mb-5 mb-sm-2">
+                        <Link to={"/details"}>
                           <div className="position-relative image-hover">
                             <img src="assets/images/news/covid.png" className="img-fluid" alt="world-news" />
                             <span className="thumb-title">Sức khỏe</span>
                           </div>
+                          </Link>
                           <h3 className="font-weight-600 mt-3">
                             Phòng ngừa Covid, những điều bạn cần biết?
                           </h3>
@@ -157,10 +159,14 @@ class Home extends Component {
                               </h8>
                             </div>
                             <div className="col-sm-6  mb-5 mb-sm-2">
+                            <Link to={"/details"}>
                               <div className="position-relative image-hover">
+                               
                                 <img src="images/flu.png" className="img-fluid" alt="world-news" />
+                                
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
+                              </Link>
                               <h6 className="font-weight-600 mt-3">
                                 Cảm cúm có nguy hiểm?
                               </h6>
