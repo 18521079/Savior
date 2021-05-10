@@ -1,5 +1,5 @@
 import "./searchLeft.css";
-
+import {Link} from 'react-router-dom';
 
 
 export default function SearchLeft() {
@@ -38,40 +38,64 @@ export default function SearchLeft() {
   </div>
 </div>
 
-  <div className="d-flex mb-3  ml3 mr3">
-    <img src="assets/img/news-100x100-1.jpg" style={{"width":"100px","height":"100px","object-fit":"cover"}} />
-    <div className="w-100 d-flex flex-column justify-content-center bg-light px-3" style={{"height":"100px"}}>
-      <div className="mb-1" style={{"font-size":"13px"}}>
-        <a href>Technology</a>
-        <span className="px-1">/</span>
-        <span>January 01, 2045</span>
+
+<div className="border-top ml3 mr3">
+  <div className="row mt3">
+    <div className="col-sm-4">
+      <div className="position-relative image-hover">
+        <img src="assets/images/news/news-6.jpg" alt="news" className="img-fluid" />
+        <span className="thumb-title1">Sức khỏe</span>
       </div>
-      <a className="h6 m-0" href>Lorem ipsum dolor sit amet consec adipis elit</a>
+    </div>
+    <div className="col-sm-8">
+      <div className="position-relative image-hover">
+        <h6 className="font-weight-600">
+          A hot springs where c
+        </h6>
+        <p style={{fontSize:'17px'}}className="fs-15">this is content area Bỏ cái nội dung vào đây</p>
+      </div>
     </div>
   </div>
-  <div className="d-flex mb-3 ml3 mr3">
-    <img src="assets/img/news-100x100-2.jpg" style={{"width":"100px","height":"100px","object-fit":"cover"}} />
-    <div className="w-100 d-flex flex-column justify-content-center bg-light px-3" style={{"height":"100px"}}>
-      <div className="mb-1" style={{"font-size":"13px"}}>
-        <a href>Technology</a>
-        <span className="px-1">/</span>
-        <span>January 01, 2045</span>
+</div>
+
+<div className="border-top ml3 mr3">
+  <div className="row mt3">
+    <div className="col-sm-4">
+      <div className="position-relative image-hover">
+        <img src="assets/images/news/news-7.jpg" alt="news" className="img-fluid" />
+        <span className="thumb-title1">Sức khỏe</span>
       </div>
-      <a className="h6 m-0" href>Lorem ipsum dolor sit amet consec adipis elit</a>
+    </div>
+    <div className="col-sm-8">
+      <div className="position-relative image-hover">
+        <h6 className="font-weight-600">
+          A hot springs where c
+        </h6>
+        <p style={{fontSize:'17px'}}className="fs-15">this is content area Bỏ cái nội dung vào đây</p>
+      </div>
     </div>
   </div>
-  <div className="d-flex mb-3  ml3 mr3">
-    <img src="assets/img/news-100x100-3.jpg" style={{"width":"100px","height":"100px","object-fit":"cover"}} />
-    <div className="w-100 d-flex flex-column justify-content-center bg-light px-3" style={{"height":"100px"}}>
-      <div className="mb-1" style={{"font-size":"13px"}}>
-        <a href>Technology</a>
-        <span className="px-1">/</span>
-        <span>January 01, 2045</span>
+</div>
+
+<div className="border-top ml3 mr3">
+  <div className="row mt3">
+    <div className="col-sm-4">
+      <div className="position-relative image-hover">
+        <img src="assets/images/news/news-2.jpg" alt="news" className="img-fluid" />
+        <span className="thumb-title1">Sức khỏe</span>
       </div>
-      <a className="h6 m-0" href>Lorem ipsum dolor sit amet consec adipis elit</a>
+    </div>
+    <div className="col-sm-8">
+      <div className="position-relative image-hover">
+        <h6 className="font-weight-600">
+          A hot springs where c
+        </h6>
+        <p style={{fontSize:'17px'}}className="fs-15">this is content area Bỏ cái nội dung vào đây</p>
+      </div>
     </div>
   </div>
-  
+</div>
+
   
 </div>
 {/* Popular News End */}

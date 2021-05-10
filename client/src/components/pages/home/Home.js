@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom';
 import "./home.css"
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import Topbar from "../../topbar/Topbar";
@@ -26,6 +26,13 @@ export default function Home() {
 
       <div className='col-md-7'>
       <Feed></Feed>
+      </div>
+
+      <div style ={{ height: 'calc(100vh - 50px)',  position: 'sticky',top: '470px'}}className='col-md-1 mt150'>
+      <Link to={"/messenger"}>
+      <img 
+      style={{width:'76px', height:'70px'}} src='images/mess.png'/>
+      </Link>
       </div>
 
       </div>

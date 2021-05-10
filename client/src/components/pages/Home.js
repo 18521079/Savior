@@ -4,7 +4,7 @@ import Info from '../Info'
 import logo from './images/healthcare-consultant.jpg'
 import logo2 from './images/community.png' 
 import Homecss from '../pages/homecss.css'
-
+import {Link} from 'react-router-dom';
 import logo4 from './images/library8.png'
 import logo5 from './images/library8.png'
 import logo6 from './images/psychological.jpg'
@@ -131,10 +131,12 @@ class Home extends Component {
                     <div className="editors-news mt3">
                       <div className="row">
                         <div className="col-lg-6  mb-5 mb-sm-2">
+                        <Link to={"/details"}>
                           <div className="position-relative image-hover">
                             <img src="assets/images/news/covid.png" className="img-fluid" alt="world-news" />
                             <span className="thumb-title">Sức khỏe</span>
                           </div>
+                          </Link>
                           <h3 className="font-weight-600 mt-3">
                             Phòng ngừa Covid, những điều bạn cần biết?
                           </h3>
@@ -157,10 +159,14 @@ class Home extends Component {
                               </h8>
                             </div>
                             <div className="col-sm-6  mb-5 mb-sm-2">
+                            <Link to={"/details"}>
                               <div className="position-relative image-hover">
+                               
                                 <img src="images/flu.png" className="img-fluid" alt="world-news" />
+                                
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
+                              </Link>
                               <h6 className="font-weight-600 mt-3">
                                 Cảm cúm có nguy hiểm?
                               </h6>
@@ -347,9 +353,9 @@ class Home extends Component {
                 <i className="far fa-question-circle icon-help" /> <a data-toggle="collapse" href="#faq-list-3" className="collapsed">Tại sao người khác dễ dàng có được tình yêu, còn tôi thì không? <i className="fas fa-chevron-down icon-show" /><i className="fas fa-chevron-up icon-close" /></a>
                 <div id="faq-list-3" className="collapse" data-parent=".faq-list">
                   <p>
-                        Thay vì mong chờ tình yêu đến sưởi ấm trái tim cô đơn của mình, bạn hãy mang tình yêu đến một trái tim cô đơn khác.
+                        Thay vì ngồi chờ tình yêu đến sưởi ấm trái tim cô đơn của mình, bạn hãy mang tình yêu đến một trái tim cô đơn khác.
 
-                        Rồi một ngày, tình yêu sẽ tự dưng mà xuất hiện đến bên bạn thôi.
+                        Rồi một ngày đẹp trời, tình yêu sẽ tự dưng mà xuất hiện đến bên bạn thôi. "Nói dối đấy ai có đâu mà biết"
                   </p>
                 </div>
               </li>

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import InTroJS from '../pages/InTroCSS.scss'
 import Swiper from 'swiper';
 import Stress from './images/stress4.png'
-
+import {Link} from 'react-router-dom';
 
 class Intro extends Component {
    
@@ -12,12 +12,14 @@ class Intro extends Component {
 
             <div> 
                 <div>
+                
                     <div className="blog-card mt3">
                       <div className="meta">
                         <div className="photo" style={{}} 
                          />
 
                          <img src={Stress}  className="photo" />
+                         <Link to={"/details"}>
                         <ul className="details">
                           <li ><i class="far fa-user"></i><a href="#"> &nbsp; Khánh Ly</a></li>
                           <li > <i class="far fa-calendar-alt"> &nbsp; </i>Aug. 24, 2021</li>
@@ -30,6 +32,7 @@ class Intro extends Component {
                             </ul>
                           </li>
                         </ul>
+                        </Link>
                       </div>
                       <div className="description">
                         <h5>Stress</h5>
@@ -41,6 +44,7 @@ class Intro extends Component {
                       </div>
                     </div>
 
+                   
                   </div>
             </div>
         )
