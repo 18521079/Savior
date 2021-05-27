@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import "./home.css"
+import "./home.scss"
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import Topbar from "../../topbar/Topbar";
 import Sidebar from "../../sidebar/Sidebar";
@@ -28,10 +29,13 @@ export default function Home() {
       <Feed></Feed>
       </div>
 
-      <div style ={{ height: 'calc(100vh - 50px)',  position: 'sticky',top: '470px'}}className='col-md-1 mt150'>
-      <Link to={"/messenger"}>
-      <img 
-      style={{width:'76px', height:'70px'}} src='images/mess.png'/>
+      <div className='body1' style ={{ height: 'calc(100vh - 50px)',  position: 'sticky',top: '470px'}}className='col-md-1 mt150'>
+      <Link className='body1'  to={"/messenger"}>
+
+<button  style={{width:'76px', height:'75px'}}  className="btn btn-primary btn-jittery btn-circle">
+    
+  </button>
+
       </Link>
       </div>
 

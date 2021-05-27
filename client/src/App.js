@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/layouts/Navbar';
 import Footer from './components/layouts/Footer';
 import { Component } from 'react';
-import{Switch, Route} from 'react-router-dom';
+import{Switch, Route, Redirect} from 'react-router-dom';
 import Home from './components/pages/Home'
 import News from './components/pages/News'
 import Contacts from './components/pages/Contacts'
@@ -16,18 +16,23 @@ import Login from './components/pages/login/Login';
 import Register from './components/pages/register/Register';
 import Details from './components/pages/Details';
 import Messenger from './components/messenger/messenger';
+import { AuthContext } from './context/Authcontext';
+import {useContext} from "react"
 
 
-class App extends Component
+function App() 
 {
-  render(){
+ 
+  
+    const {user} = useContext(AuthContext)
     return (
       <div>
         
          <Switch>
-         <Route exact path= "/" component={Login}/>
-           <Route path= "/home" component={Home}/>
-           <Route path= "/register" component={Register}/>
+         <Route exact path= "/" component={user ? Home : Login}/>
+           <Route path= "/home" component= {user? Home: Register}/>
+           <Route path= "/register" component={user ? <Redirect to="/" /> : Register}/>
+           <Route path= "/login" component={user ? <Redirect to="/" /> : Login}/>
            <Route path= "/news" component={Home1}/>
            <Route path= "/contacts" component={Contacts}/>
            <Route path= "/search" component={Search}/>
@@ -40,7 +45,7 @@ class App extends Component
         
       </div>
     );
-  }
+ 
 }
 
 export default App;

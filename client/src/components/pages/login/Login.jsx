@@ -2,16 +2,24 @@ import { useContext, useRef } from "react";
 import "./login.css";
 import { CircularProgress } from "@material-ui/core";
 import "../homecss.css";
+import { loginCall } from "../../../apiCalls";
+import { AuthContext } from "../../../context/Authcontext";
+
 export default function Login() {
   const email = useRef();
   const password = useRef();
- 
+  const {user, isFetching, dispatch, error } = useContext(AuthContext);
 
   const handleClick = (e) => {
     e.preventDefault();
+    loginCall(
+      { email: email.current.value, password:password.current.value },
+      dispatch
+    );
+    
    
   };
-
+  console.log(user)
   return (
     <div className="login">
       <div className="loginWrapper">
@@ -39,11 +47,11 @@ export default function Login() {
               ref={password}
             />
             <button className="loginButton" type="submit" >
-              Đăng nhập
+              { isFetching ? <CircularProgress color='white'></CircularProgress> :"Đăng nhập"}
             </button>
             <span className="loginForgot mt-20">Quên mật khẩu?</span>
             <button className="loginRegisterButton mb5">
-              Tạo tài khoản
+            { isFetching ? <CircularProgress color='white'></CircularProgress> :"Tạo tài khoản"}
             </button>
           </form>
         </div>

@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {InforProvider} from './components/Context'
 import {InforConSumer} from './components/Context'
-
+import {AuthContextProvider} from "./context/Authcontext"
 
 ReactDOM.render(
 
@@ -17,7 +17,10 @@ ReactDOM.render(
     
 
     <Router>
-    <App />
+      <AuthContextProvider>
+      <App />
+      </AuthContextProvider>
+    
     </Router>
 </InforProvider>
    
