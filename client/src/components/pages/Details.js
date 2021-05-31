@@ -38,7 +38,7 @@ class Details extends Component {
                                                 {/* Post content*/}
                                                 <div className="mr5 ml3 mt3">
                                                 {/* Title*/}
-                                                <h4 className="mt-4">{headerTitle}</h4>
+                                                <h4 className="mt-4">Phòng ngừa Covid-19: Những điều nên và không nên</h4>
                                                 {/* Author*/}
                                                 <p className="lead">
                                                     Tác giả:
@@ -49,12 +49,12 @@ class Details extends Component {
                                                 <p>Posted on January 1, 2021 at 12:00 PM</p>
                                                 <hr />
                                                 {/* Preview image*/}
-                                                <img style={{width:'900px', height:'300px'}}className="img-fluid rounded" src={img} alt="..." />
+                                                <img style={{width:'900px', height:'300px'}}className="img-fluid rounded" src='assets/post/covid.jpg' alt="..." />
                                                 <hr />
                                                 {/* Post content*/}
-                                                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+                                                <p className="lead">Dịch Covid-19 do virus SARS-CoV-2 hiện đã lan tới 209 quốc gia và vùng lãnh thổ. Vậy để phòng ngừa Covid-19, bạn nên và không nên làm gì?</p>
+                                                <p>Tính đến chiều nay, 7-4-2020, trên thế giới có 1.347.844 người nhiễm Covid-19 do virus SARS-CoV-2, trong đó có 74.792 người tử vong. Các nước có ca tử vong nhiều nhất là Ý với 16.523 người, Tây Ban Nha 13.341 người, Mỹ 10.943 người… Việt Nam cũng có 245 bệnh nhân mắc Covid-19, 106 người đã chữa khỏi và chưa có ca tử vong. Tuy nhiên, để dịch bệnh không lây lan thêm, Hello Bacsi mách bạn những điều nên và không nên trong việc phòng ngừa Covid-19.</p>
+                                                <p>Bạn có thể xem toàn bộ thông tin về bệnh COVID-19 do coronavirus tại đây!</p>
                                                 <blockquote className="blockquote">
                                                     <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                                                     <footer className="blockquote-footer">

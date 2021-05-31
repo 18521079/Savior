@@ -88,7 +88,7 @@ export default function Messenger() {
               <span className="online_icon" />
             </div>
             <div className="user_info">
-              <span>Trò chuyện cùng Savious</span>
+              <span>Trò chuyện cùng Savior</span>
               <p>1767 tin nhắn</p>
             </div>
             <div className="video_cam">

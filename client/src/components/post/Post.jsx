@@ -37,7 +37,7 @@ export default function Post({ post }) {
         <div className="postTop">
           <div className="postTopLeft">
             <Link to={`profile/${user.username}`}>
-              <img className="shareProfileImg" src={user.profilePicture || PF + "person/noAvatar.png"}
+              <img className="shareProfileImg" src={user.profilePicture ? PF+user.profilePicture : PF+"person/noAvatar.png"}
                
               />
 
@@ -54,7 +54,7 @@ export default function Post({ post }) {
         </div>
         <div className="postCenter">
           <span className="postText ml3">{post?.desc}</span>
-          <img className="postImg" src={PF+post.img} />
+          <img  className="postImg" src={PF+post.img} />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft ml3">

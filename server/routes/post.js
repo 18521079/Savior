@@ -85,6 +85,16 @@ router.get("/timeline/all", async (req, res) => {
     }
 });
 
+//get all timeline
+router.get("/all/all", async (req, res) => {
+    try {
+        const post = await Post.find({});
+        res.status(200).json(post);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 // get timeline posts // chay ok 
 router.get("/timeline/:userId", async (req, res) => {
     try {

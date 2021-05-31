@@ -51,7 +51,7 @@ export default function Login() {
             </button>
             <span className="loginForgot mt-20">Quên mật khẩu?</span>
             <button className="loginRegisterButton mb5">
-            { isFetching ? <CircularProgress color='white'></CircularProgress> :"Tạo tài khoản"}
+           Tạo tài khoản
             </button>
           </form>
         </div>
