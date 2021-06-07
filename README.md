@@ -6,21 +6,21 @@
 +Sinh viên tìm kiếm, tra cứu các vấn đề tâm lý (sức khỏe). Đọc các bài viết về tâm lý (sức khỏe) và có thể để lại bình luận của mình.                                                
 +Trang chủ giống như một trang tin tức hiển thị thông tin bệnh theo mùa, các vấn đề tâm lý mà các bạn hay gặp phải để dễ dàng theo dõi.                                   
 +Sinh viên đăng bài với nội dung và hình ảnh về vấn đề tâm lý (sức khỏe) để nhờ tư vấn, giải đáp thắc mắc. Mọi người có thể like, comment bài viết. Riêng chuyên gia khi bình luận sẽ có dấu xanh để tăng độ tin tưởng.                                                                                                                                               
-+Sinh viên có thể được tư vấn trực tiếp với các chuyên gia của savior thông qua chức năng nhắn tin, ngoài ra còn có thể đặt lịch hẹn để gặp chuyên gia.
++Sinh viên có thể được tư vấn trực tiếp với các chuyên gia của savior thông qua chức năng nhắn tin, ngoài ra còn có thể đặt lịch hẹn để gặp chuyên gia.                              
++Sinh viên có thể nhập các thông số cần thiết để Savior tính toán chỉ số BMI, từ đó biết được tình trạng sức khỏe, mức cân nặng phù hợp với chiều cao, cũng như các lời khuyên hữu ích khác.
 
-*Công nghệ: ứng dụng web
+*Công nghệ: ứng dụng web                                                                                                                                                          
+-Backend: Nodejs+ express framework                                                                                                                                              
+-Frontend: Reactjs                                                                                                                                                                
+-Database: MongoDB
 
--Backend: Nodejs+ express framework
-
--Frontend: Reactjs
-
--Databasse: MongoDB
-
-*Sinh viên Thực hiện:
-
--Frontend: Nguyễn Thị Khánh Ly
-
+*Sinh viên Thực hiện:                                                                                                                                                            
+-Frontend: Nguyễn Thị Khánh Ly                                                                                                                                                    
 -Backend: Hà Minh Thành
+
+*Đăng nhập với tư cách một chuyên gia:                                                                                                                                            
+-Email: khanhly01@gmail.com                                                                                                                                                      
+-Password: 123456
 
 *Demo:
 ...
