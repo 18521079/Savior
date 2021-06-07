@@ -11,6 +11,7 @@ import Contacts from './components/pages/Contacts'
 import NotFoundPage from './components/pages/NotFoundPage'
 import Search from './components/pages/Search'
 import Home1 from './components/pages/home/Home'
+import BMI from './components/pages/BMI/BMI'
 import Profile from './components/pages/profile/Profile';
 import Login from './components/pages/login/Login';
 import Register from './components/pages/register/Register';
@@ -34,6 +35,7 @@ function App()
            <Route path= "/register" component={user ? <Redirect to="/" /> : Register}/>
            <Route path= "/login" component={user ? <Redirect to="/" /> : Login}/>
            <Route path= "/news" component={Home1}/>
+           <Route path= "/BMI" component={BMI}/>
            <Route path= "/contacts" component={Contacts}/>
            <Route path= "/search" component={Search}/>
            <Route path= "/profile/:username" component={Profile}/>

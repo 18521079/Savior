@@ -21,6 +21,7 @@ function Navbar(){
       <li className="nav-item">
         <Link className="nav-link active" to="/home">Trang chủ</Link>
       </li>
+
       <li className="nav-item">
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,6 +33,19 @@ function Navbar(){
         </ul>
       </li>
       </li>
+
+      <li className="nav-item">
+      <li className="nav-item dropdown">
+        <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Sức Khỏe
+        </a>
+        <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+          <li><Link className="dropdown-item" to="/BMI">Tính BMI</Link></li>
+          <li><Link className="dropdown-item" to="/books_management">Tính BMR</Link></li>
+        </ul>
+      </li>
+      </li>
+
       <li className="nav-item">
         <Link className="nav-link" to="/news">Bản tin</Link>
       </li>
@@ -53,9 +67,11 @@ function Navbar(){
       </li>
       </li>
 
-      <li className="nav-item">
+     {/* <li className="nav-item">
         <Link className="nav-link" to="/contacts">Liên hệ</Link>
       </li>
+    */}
+
     </ul>
   </div>
 </div>
