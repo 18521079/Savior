@@ -87,24 +87,24 @@ class BMI extends Component {
         <div className="App-header">
          
         </div>
-          <form onSubmit={this.submitMe}>
+          <form style={{margin:"10px"}} className="form1" onSubmit={this.submitMe}>
            
-            <label>
+            <label  className="label">
               Chọn giới tính của bạn
             </label>
 
             <div className="col-md-12">
                 <div className="row">
-                     <label className="option_item">
-                        <input type="checkbox" className="checkbox" defaultChecked />
+                     <label className="option_item label">
+                        <input type="checkbox" className="checkbox input" defaultChecked />
                             <div  style={{ background: "url({`${PF}/female.png`}) no-repeat center center"}} className="option_inner twitter">
                                 <div className="tickmark" />
                                 <img style={{height:'130px', width:"130px"}} src={`${PF}/female.png`} alt="Girl"></img>
                             </div>
                     </label>      
 
-                    <label className="option_item" style={{width:"230px", height:"250px"}}>
-                        <input type="checkbox" className="checkbox" />
+                    <label className="option_item label" style={{width:"230px", height:"250px"}}>
+                        <input type="checkbox" className="checkbox input" />
                             <div className="option_inner facebook">
                                 <div className="tickmark" />
                                 <img style={{height:'150px', width:"150px"}} src={`${PF}/male.png`} alt="Girl"></img>
@@ -114,27 +114,27 @@ class BMI extends Component {
                 </div>
             </div>
 
-      <label style={{marginTop:"60px"}}> 
+      <label className="label"  style={{marginTop:"60px"}}> 
              Nhập chiều cao của bạn (cm): 
             </label>
             <div className="col-md-6 form-group">
-                    <input type="text" name="height" value={this.state.height} onBlur={this.blur} onChange={this.heightchange} className="form-control"  placeholder="cm" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="height" value={this.state.height} onBlur={this.blur} onChange={this.heightchange} className="form-control input"  placeholder="cm" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
                     <div className="validate" />
                   </div>
 
-             <label>
+             <label className="label">
              Nhập cân nặng của bạn (kg) : 
             </label>
 
             <div className="col-md-6 form-group">
-                    <input type="text" name="weight" value={this.state.weight}  onChange={this.weightchange} className="form-control"  placeholder="cm" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="weight" value={this.state.weight}  onChange={this.weightchange} className="form-control input"  placeholder="cm" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
                     <div className="validate" />
                   </div>
-                  <input className='btn  btn_normal' type="submit" value="Tính MBI"/>
+                  <input className='btn  btn_normal input' type="submit" value="Tính MBI"/>
 
-            <label>{this.state.checked} Hello, Hôm nay bạn như thế nào? Chỉ số BMI của bạn là  {this.state.bmi} </label>
-              <label>{this.state.message}</label>
-              <label>{this.state.optimalweight}</label>
+            <label  className="label" >{this.state.checked} Hello, Hôm nay bạn như thế nào? Chỉ số BMI của bạn là  {this.state.bmi} </label>
+              <label  className="label" >{this.state.message}</label>
+              <label  className="label" >{this.state.optimalweight}</label>
              
             
           </form>

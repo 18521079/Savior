@@ -11,6 +11,7 @@ import logo6 from './images/psychological.jpg'
 import video from './images/book_video.mp4'
 import Navbar from '../layouts/Navbar'
 import Footer from '../layouts/Footer'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
  
 
 
@@ -99,6 +100,12 @@ class Home extends Component {
           <span className="sr-only">Next</span>
         </a>
      </div>
+
+     <MessengerCustomerChat
+    pageId="102597662060265"
+    appId="941196013402976"
+   
+  />
 
 
 {/* ======= Bệnh phổ biến ======= */}    
