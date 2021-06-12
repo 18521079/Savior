@@ -776,24 +776,25 @@ td img{
 }
 
 .card-1{
-  background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+  background-image: url(https://photo-cdn2.icons8.com/zvpLLWd8dKIS5ZEq-4SNeNNisGF-eHA-dmHA2_ReIm0/rs:fit:576:686/Z3M6Ly9tb29zZTIv/YXNzZXRzL2VkaXRv/ci9tb2RlbC80MDYv/NDk3ZWE3MmItMThk/OC00MDBjLTllMzgt/MjI0ZTEwNzg4NWYy/LnBuZw.png);
       background-repeat: no-repeat;
     background-position: right;
-    background-size: 80px;
+    background-size: 130px;
+	
 }
 
 .card-2{
-   background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+   background-image: url(https://photo-cdn2.icons8.com/ksn8f905exby8xiNFOltqfY61BT0_R2mRqOjoHzdAyw/rs:fit:576:667/Z3M6Ly9tb29zZTIv/YXNzZXRzL2VkaXRv/ci9tb2RlbC83NDkv/NjFmOTBiMDQtYTE2/NC00NzlmLWE1NjMt/ODA3YzBiZmY2NDc0/LnBuZw.png);
       background-repeat: no-repeat;
     background-position: right;
-    background-size: 80px;
+    background-size: 130px;
 }
 
 .card-3{
-   background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+   background-image: url(https://photo-cdn2.icons8.com/z1Em2Pq68rxmuujmOAdch_1Ln2VKEFjgZnDF_DU8J-s/rs:fit:576:818/Z3M6Ly9tb29zZTIv/YXNzZXRzL2VkaXRv/ci9tb2RlbC83Mzcv/OWMwNDYzNzMtZmEw/ZC00ZGEwLThlNDIt/NDlmMzUzMTQwZDVm/LnBuZw.png);
       background-repeat: no-repeat;
     background-position: right;
-    background-size: 80px;
+    background-size: 115px;
 }
 
 @media(max-width: 990px){

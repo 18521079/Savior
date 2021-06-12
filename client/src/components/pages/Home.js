@@ -113,7 +113,7 @@ class Home extends Component {
                       <div className="row">
                         <div className="col-lg-3 ml130 mt70">
                           <div className="d-flex position-relative float-left">
-                            <h1 className="section-title">Bệnh phổ biến</h1>
+                            <h1 className="section-title">Dịch bệnh theo mùa</h1>
                           </div>
                         </div>
                       </div>
@@ -140,7 +140,7 @@ class Home extends Component {
                         <div className="col-lg-6  mb-5 mb-sm-2">
                         <Link to={"/details"}>
                           <div className="position-relative image-hover">
-                            <img src="assets/images/news/covid.png" className="img-fluid" alt="world-news" />
+                            <img src="assets/images/news/covid-19.jpg" className="img-fluid" alt="world-news" />
                             <span className="thumb-title">Sức khỏe</span>
                           </div>
                           </Link>
@@ -155,7 +155,7 @@ class Home extends Component {
                           <div className="row">
                             <div className="col-sm-6  mb-5 mb-sm-2">
                               <div className="position-relative image-hover">
-                                <img src="images/dengue.png" className="img-fluid" alt="world-news" />
+                                <img src="assets/images/news/fever1.jpg" className="img-fluid" alt="world-news" />
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
                               <h6 className="font-weight-600 mt-3">
@@ -169,13 +169,13 @@ class Home extends Component {
                             <Link to={"/details"}>
                               <div className="position-relative image-hover">
                                
-                                <img src="images/flu.png" className="img-fluid" alt="world-news" />
+                                <img src="assets/images/news/lemons.jpg" className="img-fluid" alt="world-news" />
                                 
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
                               </Link>
                               <h6 className="font-weight-600 mt-3">
-                                Cảm cúm có nguy hiểm?
+                                Mẹo chữa bệnh cảm cúm?
                               </h6>
                               <p className="fs-15 font-weight-normal">
                               Đến hẹn lại lên, mỗi năm vào mùa dịch cúm lây lan...
@@ -185,7 +185,7 @@ class Home extends Component {
                           <div className="row mt-3">
                             <div className="col-sm-6  mb-5 mb-sm-2">
                               <div className="position-relative image-hover">
-                                <img src="assets/images/dashboard/star-magazine-7.jpg" className="img-fluid" alt="world-news" />
+                                <img src="assets/images/news/cold.jpg" className="img-fluid" alt="world-news" />
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
                               <h6 className="font-weight-600 mt-3">
@@ -197,7 +197,7 @@ class Home extends Component {
                             </div>
                             <div className="col-sm-6">
                               <div className="position-relative image-hover">
-                                <img src="assets/images/news/fever.png" className="img-fluid" alt="world-news" />
+                                <img src="assets/images/news/fever.jpg" className="img-fluid" alt="world-news" />
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
                               <h6 className="font-weight-600 mt-3">
@@ -258,7 +258,7 @@ class Home extends Component {
                       <p>Đừng đợi cho đến khi stress làm ảnh hưởng đến sức khỏe, công việc, các mối quan hệ của bạn. Khi thấy bản thân có các dấu hiệu của bệnh stress và diễn ra trong một thời gian dài, bạn nên đi khám bác sĩ để được hỗ trợ và giúp đỡ.</p>
                     </div>
                     <div className="col-lg-4 text-center order-1 order-lg-2">
-                      <img src="assets/diseases/stress.jpg" alt="" className="img-fluid" />
+                      <img style={{width:"330px"}} src="assets/diseases/stress.jpg" alt="" className="img-fluid" />
                     </div>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ class Home extends Component {
                       <p>Ea ipsum voluptatem consequaturis est. Illum error ullam omequatur quis est. Illum error ullam omequatur quis est. Illum error ullam om ullam omequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                     </div>
                     <div className="col-lg-4 text-center order-1 order-lg-2">
-                      <img  src="assets/diseases/stress1.jpg" alt="" className="img-fluid" />
+                      <img style={{width:"290px"}}  src="assets/diseases/stress1.jpg" alt="" className="img-fluid" />
                     </div>
                   </div>
                 </div>
@@ -549,7 +549,7 @@ class Home extends Component {
                       </div>
         </div>
         <div>
-          <iframe style={{border: 0, width: '100%', height: '350px'}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameBorder={0} allowFullScreen />
+          <iframe style={{border: 0, width: '100%', height: '350px'}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621=" frameBorder={0} allowFullScreen />
         </div>
         <div className="container mt3">
           <div className="row ml-5">
