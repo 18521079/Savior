@@ -780,6 +780,7 @@ td img{
       background-repeat: no-repeat;
     background-position: right;
     background-size: 130px;
+	background-color: #D3C0F9;
 	
 }
 
@@ -788,6 +789,7 @@ td img{
       background-repeat: no-repeat;
     background-position: right;
     background-size: 130px;
+	background-color: #ECD4D4;
 }
 
 .card-3{
@@ -795,6 +797,7 @@ td img{
       background-repeat: no-repeat;
     background-position: right;
     background-size: 115px;
+	background-color: #B5DDD1;
 }
 
 @media(max-width: 990px){

@@ -53,7 +53,7 @@ export default function Post({ post }) {
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText ml3">{post?.desc}</span>
+          <span style={{marginLeft:"0px"}} className="postText ml3">{post?.desc}</span>
           <img  className="postImg" src={PF+post.img} />
         </div>
         <div className="postBottom">

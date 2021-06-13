@@ -34,7 +34,7 @@ class Home extends Component {
      </ul>
        <div className="carousel-inner">
          <div className="carousel-item active">
-            <div className="mid">
+            <div  className="mid">
               <video autoPlay muted loop>
                 <source className="embed-responsive" src={video} type="video/mp4" />
               </video>
@@ -53,7 +53,7 @@ class Home extends Component {
            
          </div>
         
-         <div className="carousel-item">
+         <div  className="carousel-item">
            <img src={logo} />
            
            <div className="carousel-caption">

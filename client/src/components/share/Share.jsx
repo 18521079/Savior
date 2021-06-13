@@ -55,7 +55,7 @@ export default function Share() {
             alt=""
           />
           <input className="shareInput"
-           placeholder={"Bạn đang gặp vấn đề gì " + user.username + " ?"}
+           placeholder={"Hello " + user.username + ", Bạn đang gặp vấn đề gì?"}
            ref={desc}
             
           />
@@ -70,18 +70,6 @@ export default function Share() {
               <input style={{display:"none"}} type="file" id="file" accept=".png,.jpeg,.jpg" onChange={(e)=>setFile(e.target.files[0])}></input>
 
             </label>
-            <div className="shareOption">
-              <Label htmlColor="blue" className="shareIcon" />
-              <span className="shareOptionText">Gắn thẻ</span>
-            </div>
-            <div className="shareOption">
-              <Room htmlColor="green" className="shareIcon" />
-              <span className="shareOptionText">Địa điểm</span>
-            </div>
-            <div className="shareOption">
-              <EmojiEmotions htmlColor="goldenrod" className="shareIcon" />
-              <span className="shareOptionText">Cảm súc</span>
-            </div>
           </div>
           <button className="shareButton" type="submit">
             Chia sẻ

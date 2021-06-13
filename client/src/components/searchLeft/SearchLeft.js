@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom';
 
 
 export default function SearchLeft() {
+
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   return (
       <>
     <div className="sidebar">
@@ -43,7 +46,7 @@ export default function SearchLeft() {
   <div className="row mt3">
     <div className="col-sm-4">
       <div className="position-relative image-hover">
-        <img src="assets/images/news/news-6.jpg" alt="news" className="img-fluid" />
+        <img style={{width:"230px"}}  src={`${PF}post/health1.jpeg`} alt="news" className="img-fluid" />
         <span className="thumb-title1">Sức khỏe</span>
       </div>
     </div>
