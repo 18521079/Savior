@@ -1,24 +1,22 @@
 # Savior
-Đồ án 1:
-Ứng dụng hỗ trợ sức khỏe, tâm lý cho sinh viên
 
-*Chức năng chính                                                                                                                                                                  
-+Sinh viên tìm kiếm, tra cứu các vấn đề tâm lý (sức khỏe). Đọc các bài viết về tâm lý (sức khỏe) và có thể để lại bình luận của mình.                                                
-+Trang chủ giống như một trang tin tức hiển thị thông tin bệnh theo mùa, các vấn đề tâm lý mà các bạn hay gặp phải để dễ dàng theo dõi.                                   
-+Sinh viên đăng bài với nội dung và hình ảnh về vấn đề tâm lý (sức khỏe) để nhờ tư vấn, giải đáp thắc mắc. Mọi người có thể like, comment bài viết. Riêng chuyên gia khi bình luận sẽ có dấu xanh để tăng độ tin tưởng.                                                                                                                                               
-+Sinh viên có thể được tư vấn trực tiếp với các chuyên gia của savior thông qua chức năng nhắn tin, ngoài ra còn có thể đặt lịch hẹn để gặp chuyên gia.                              
-+Sinh viên có thể nhập các thông số cần thiết để Savior tính toán chỉ số BMI, từ đó biết được tình trạng sức khỏe, mức cân nặng phù hợp với chiều cao, cũng như các lời khuyên hữu ích khác.
+Application to support health and psychology for students
 
-*Công nghệ: ứng dụng web                                                                                                                                                          
--Backend: Nodejs+ express framework                                                                                                                                              
+*Main feature                                                                                                                                                                  
++Students search psychological (health) problems. Read articles about psychology (health) and can leave comments.                                                
++The homepage is like a news page that displays information about seasonal diseases and psychological problems that everybody often encounter for easy tracking.                                   
++Students post with content and images about psychological (health) problems to ask for advice and answer questions. Everybody can like and comment on posts. Only experts when commenting have a green mark to increase trust.                                                                                                                                               
++Students can be consulted directly with savior's experts through the messaging feature, in addition, they can also make an appointment with an expert.                              
++Students can enter the necessary parameters for Savior calculate BMI, thereby knowing their health status, appropriate weight for height, as well as other useful tips.
+ 
+ *Tech Stacks                                                                                                                                                                         
+-Backend: Nodejs+ express framework, database: MongoDB                                                                                                                                            
 -Frontend: Reactjs                                                                                                                                                                
--Database: MongoDB
-
-*Sinh viên Thực hiện:                                                                                                                                                            
+                                                                                                                                                            
 -Frontend: Nguyễn Thị Khánh Ly                                                                                                                                                    
 -Backend: Hà Minh Thành
 
-*Đăng nhập với tư cách một chuyên gia:                                                                                                                                            
+*Sign in as an expert:                                                                                                                                            
 -Email: khanhly01@gmail.com                                                                                                                                                      
 -Password: 123456
 
