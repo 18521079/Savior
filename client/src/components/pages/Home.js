@@ -9,6 +9,8 @@ import logo4 from './images/library8.png'
 import logo5 from './images/library8.png'
 import logo6 from './images/psychological.jpg'
 import video from './images/book_video.mp4'
+import video1 from './images/fever.mp4'
+import video2 from './images/flu.mp4'
 import Navbar from '../layouts/Navbar'
 import Footer from '../layouts/Footer'
 import MessengerCustomerChat from 'react-messenger-customer-chat';
@@ -19,6 +21,7 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 class Home extends Component {
 
     render() {
+      const speed = 2
         return (
           <>
           <Navbar></Navbar>
@@ -35,7 +38,7 @@ class Home extends Component {
        <div className="carousel-inner">
          <div className="carousel-item active">
             <div  className="mid">
-              <video autoPlay muted loop>
+              <video  playbackRate={speed} autoPlay muted loop>
                 <source className="embed-responsive" src={video} type="video/mp4" />
               </video>
               <div class="color-overlay"></div>
@@ -144,9 +147,9 @@ class Home extends Component {
                             <span className="thumb-title">Sức khỏe</span>
                           </div>
                           </Link>
-                          <h3 className="font-weight-600 mt-3">
+                          <h4 className="font-weight-600 mt-3">
                             Phòng ngừa Covid, những điều bạn cần biết?
-                          </h3>
+                          </h4>
                           <p className="fs-15 font-weight-normal">
                             Bạn có thể xem toàn bộ thông tin về bệnh Covid-19 tại đây!. Dịch Covid-19 do virus SARS-CoV-2 hiện đã lan tới 209 quốc gia và vùng lãnh thổ. Vậy để phòng ngừa Covid-19, bạn nên và không nên làm gì?
                           </p>
@@ -161,15 +164,17 @@ class Home extends Component {
                               <h6 className="font-weight-600 mt-3">
                                 Điều trị sốt xuất huyết
                               </h6>
-                              <h8 className="fs-15 font-weight-normal">
-                              Là một bệnh do virus Dengue gây ra, lây truyền...
+                              <h8 style={{fontSize:"16px"}} className="fs-15 font-weight-normal">
+                              là bệnh truyền nhiễm cấp tính, có thể gây thành dịch, do virus...
                               </h8>
                             </div>
                             <div className="col-sm-6  mb-5 mb-sm-2">
                             <Link to={"/details"}>
                               <div className="position-relative image-hover">
                                
-                                <img src="assets/images/news/lemons.jpg" className="img-fluid" alt="world-news" />
+                              <video style={{height:"170px"}} playbackRate={speed} autoPlay muted loop>
+                <source src={video2} type="video/mp4" />
+              </video>
                                 
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
@@ -177,21 +182,26 @@ class Home extends Component {
                               <h6 className="font-weight-600 mt-3">
                                 Mẹo chữa bệnh cảm cúm?
                               </h6>
-                              <p className="fs-15 font-weight-normal">
+                              <h8 style={{fontSize:"16px"}}  className="fs-15 font-weight-normal">
                               Đến hẹn lại lên, mỗi năm vào mùa dịch cúm lây lan...
-                              </p>
+                              </h8>
                             </div>
                           </div>
                           <div className="row mt-3">
                             <div className="col-sm-6  mb-5 mb-sm-2">
                               <div className="position-relative image-hover">
-                                <img src="assets/images/news/cold.jpg" className="img-fluid" alt="world-news" />
+                               {/* <img src="assets/images/news/cold.jpg" className="img-fluid" alt="world-news" /> */}
+
+                                <video style={{height:"170px"}} playbackRate={speed} autoPlay muted loop>
+                <source src={video1} type="video/mp4" />
+              </video>
+
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
                               <h6 className="font-weight-600 mt-3">
                                 Bí kíp trị cảm lạnh hiệu quả.
                               </h6>
-                              <p className="fs-15 font-weight-normal">
+                              <p  style={{fontSize:"16px"}}  className="fs-15 font-weight-normal">
                               Cảm lạnh là tình trạng rất phổ biến và hẳn ai cũng...
                               </p>
                             </div>
@@ -200,10 +210,10 @@ class Home extends Component {
                                 <img src="assets/images/news/fever.jpg" className="img-fluid" alt="world-news" />
                                 <span className="thumb-title">Sức khỏe</span>
                               </div>
-                              <h6 className="font-weight-600 mt-3">
+                              <h6  className="font-weight-600 mt-3">
                                 Điều trị sốt siêu vi tại nhà.
                               </h6>
-                              <p className="fs-15 font-weight-normal">
+                              <p style={{fontSize:"16px"}}  className="fs-15 font-weight-normal">
                               Cách phân biệt sốt siêu vi và sốt xuất huyết sẽ trở nên...
                               </p>
                             </div>
@@ -508,30 +518,30 @@ class Home extends Component {
         </div>
       </section>{/* End Counts Section */}
      
-     <div className="container">
+     <div className="container-fluid">
        
         <div className=" container row padt50">
 
         
 
           <div className="col-md-4">
-            <div className="card card-1 card-new">
-            <h5>Về sức khỏe</h5>
-              <p>Nếu bạn cần tìm tin tức về y khoa, sức khỏe. Đây là nơi dành cho bạn.</p>
+            <div  className="card card-1 card-new">
+            <h4 style={{color:"white", marginTop:"100px", marginLeft:"30px"}}> SỨC KHỎE</h4>
+              
             </div>
           </div>
 
 
           <div className="col-md-4">
             <div className="card card-2 card-new">
-              <h5>Tư vấn tâm lý</h5>
-              <p>Nhiều vấn đề về tâm lý nghiêm trọng có thể không được phát hiện sớm. </p>
+              <h4 style={{color:"white", marginTop:"100px", marginLeft:"30px"}} >TÂM LÝ</h4>
+             
             </div>
           </div>
           <div className="col-md-4">
             <div className="card card-3 card-new">
-            <h5>Bản tin</h5>
-              <p>Nơi bạn có thể thoải mái trao đổi, chia sẻ với các thành viên trong diễn đàn</p>
+            <h4 style={{color:"white", marginTop:"100px", marginLeft:"30px"}}>BẢN TIN</h4>
+             
             </div>
           </div>
         </div>

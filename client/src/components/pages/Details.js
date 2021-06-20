@@ -56,14 +56,31 @@ class Details extends Component {
                                                 <p>Tính đến chiều nay, 7-4-2020, trên thế giới có 1.347.844 người nhiễm Covid-19 do virus SARS-CoV-2, trong đó có 74.792 người tử vong. Các nước có ca tử vong nhiều nhất là Ý với 16.523 người, Tây Ban Nha 13.341 người, Mỹ 10.943 người… Việt Nam cũng có 245 bệnh nhân mắc Covid-19, 106 người đã chữa khỏi và chưa có ca tử vong. Tuy nhiên, để dịch bệnh không lây lan thêm, Hello Bacsi mách bạn những điều nên và không nên trong việc phòng ngừa Covid-19.</p>
                                                 <p>Bạn có thể xem toàn bộ thông tin về bệnh COVID-19 do coronavirus tại đây!</p>
                                                 <blockquote className="blockquote">
-                                                    <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                                    <footer className="blockquote-footer">
-                                                    Someone famous in
-                                                    <cite title="Source Title">Source Title</cite>
-                                                    </footer>
+                                                    <h4 style={{color:"#00b8ad"}} className="mb-0">Phòng ngừa Covid-19: Những điều nên.</h4>
+                                                    <ul>
+                                                        <li>Rửa tay thường xuyên Rửa tay thường xuyên</li>
+                                                        <li>Tìm hiểu các triệu chứng</li>
+                                                        <li>Đeo khẩu trang khi bạn đi làm hay đến nơi công cộng</li>
+                                                        <li>Nên cân nhắc khi đi du lịch/công tác</li>
+                                                    </ul>
+
+                                                    <h4 style={{color:"#00b8ad"}} className="mb-0">Phòng ngừa Covid-19: Những điều không nên.</h4>
+                                                    <ul>
+                                                        <li>Không chạm tay vào mắt, mũi, miệng</li>
+                                                        <li>Tìm hiểu các triệu chứng</li>
+                                                        <li>Không hoảng sợ
+</li>
+                                                        <li>Rời khỏi nhà</li>
+                                                    </ul>
+                                                    
+                                                    
                                                 </blockquote>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+                                                <p>Bạn có biết việc điều trị COVID-19 sẽ gặp nhiều khó khăn hơn nếu người bệnh có một số bệnh nền hoặc các rối loạn tâm thần nhất định?</p>
+                                                <p>Theo bác sĩ Li, mọi người nên tập thể dục thường xuyên tại nhà (không nên ra công viên, nơi đông người) và có chế độ ăn uống lành mạnh để tăng cường sức khỏe tim mạch trong mùa dịch COVID-19.</p>
+                                                <footer className="blockquote-footer">
+                                                    Bài viết tham khảo tại
+                                                    <cite title="Source Title"> Hello bác sĩ</cite>
+                                                    </footer>
                                                 <hr />
                                                 {/* Comments form*/}
                                                 <div className="card my-4">

@@ -46,16 +46,16 @@ export default function SearchLeft() {
   <div className="row mt3">
     <div className="col-sm-4">
       <div className="position-relative image-hover">
-        <img style={{width:"230px"}}  src={`${PF}post/health1.jpeg`} alt="news" className="img-fluid" />
+        <img style={{width:"230px"}} src="assets/images/news/news-6.jpg" alt="news" className="img-fluid" />
         <span className="thumb-title1">Sức khỏe</span>
       </div>
     </div>
     <div className="col-sm-8">
       <div className="position-relative image-hover">
         <h6 className="font-weight-600">
-          A hot springs where c
+          Mẹo giải tỏa mệt mỏi?
         </h6>
-        <p style={{fontSize:'17px'}}className="fs-15">this is content area Bỏ cái nội dung vào đây</p>
+        <p style={{fontSize:'17px'}}className="fs-15">Căng thẳng mệt mỏi chắc hẳn ai trong chúng ta cũng đều... </p>
       </div>
     </div>
   </div>
@@ -72,9 +72,9 @@ export default function SearchLeft() {
     <div className="col-sm-8">
       <div className="position-relative image-hover">
         <h6 className="font-weight-600">
-          A hot springs where c
+          Lạnh chân là vấn đề gì?
         </h6>
-        <p style={{fontSize:'17px'}}className="fs-15">this is content area Bỏ cái nội dung vào đây</p>
+        <p style={{fontSize:'17px'}}className="fs-15">chân bị lạnh vào mùa đông còn do những yếu tố...</p>
       </div>
     </div>
   </div>
@@ -91,9 +91,9 @@ export default function SearchLeft() {
     <div className="col-sm-8">
       <div className="position-relative image-hover">
         <h6 className="font-weight-600">
-          A hot springs where c
+          Hay bị bầm tím là do?
         </h6>
-        <p style={{fontSize:'17px'}}className="fs-15">this is content area Bỏ cái nội dung vào đây</p>
+        <p style={{fontSize:'17px'}}className="fs-15">Bạn hay bị bầm tím dưới da không rõ nguyên nhân?...</p>
       </div>
     </div>
   </div>
