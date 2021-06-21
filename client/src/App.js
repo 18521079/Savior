@@ -19,6 +19,7 @@ import Details from './components/pages/Details';
 import Messenger from './components/messenger/messenger';
 import { AuthContext } from './context/Authcontext';
 import {useContext} from "react"
+import DetailsArticle from './components/pages/DetailsArticle';
 
 
 function App() 
@@ -39,6 +40,7 @@ function App()
            <Route path= "/contacts" component={Contacts}/>
            <Route path= "/search" component={Search}/>
            <Route path= "/profile/:username" component={Profile}/>
+           <Route path= "/article/:id" component={DetailsArticle}/>
            <Route path= "/details" component={Details}/>
            <Route path= "/messenger" component={Messenger}/>
            <Route component={NotFoundPage}/>

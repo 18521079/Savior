@@ -4,9 +4,9 @@ import Swiper from 'swiper';
 import Stress from './images/stress4.png'
 import {Link} from 'react-router-dom';
 
-class Intro extends Component {
+export default function Intro(intro) {
    
-    render() {
+   
      
         return (
 
@@ -47,9 +47,7 @@ class Intro extends Component {
                    
                   </div>
             </div>
-        )
-    }
+        );
+    
     
 }
-
-export default Intro;

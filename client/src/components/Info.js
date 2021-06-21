@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {InforConSumer} from './Context'
 import homecss from './pages/homecss.css'
 import {Link} from 'react-router-dom';
+
 class Info extends Component {
     render() {
         const
