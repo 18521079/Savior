@@ -10,21 +10,22 @@ import axios from "axios";
 export default function SearchNews() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [articles, setArticle] = useState([]);
-  useEffect(()=>{
-    return ()=>{
-      const fechdata = async ()=>{
-       const res = await axios.get("articles/all/all");
-      
-        setArticle(res.data);
-      }
-      fechdata();
-      
-      
+  const [search, setSearch] = useState('');
+  const filteredTag = articles.filter (article=>{
+    return article.tag.toLowerCase().includes(search.toLowerCase())
+  })
+  useEffect(() => {
+    const fetchUser = async () => {
+      const res = await axios.get("articles/all/all");
+    setArticle(res.data)
     };
-  }
-  )
+   
+    fetchUser();
+  }, [] )
 
+  
   return (
+    
     <div className="sidebar">
       
       <div className="row">
@@ -36,9 +37,15 @@ export default function SearchNews() {
                         </div>
                       </div>
 
+                     {/* Search widget*/}
+
+  <div style={{marginTop:"10px"}}  className="field" id="searchform">
+        <input style={{height:"55px", fontSize:"19px"}} onChange={e=>setSearch(e.target.value)} type="text" id="searchterm" placeholder="Tìm kiếm theo triệu chứng" />
+        <button type="button" id="search">Find!</button>
+      </div>
                    
                       {
-                        articles.map( article=>
+                        filteredTag.map( article=>
                           <div> 
                 <div>
                 
@@ -48,7 +55,11 @@ export default function SearchNews() {
                          />
 
                     <img src={PF+article.img}  className="photo" />
-                         <Link to={"/article/"+article._id}>
+                   {/* <Link to={"/article/"+article._id}> */}
+
+                        <a href={article.link}>
+                        
+                       
                         <ul className="details">
                           <li ><i class="far fa-user"></i> &nbsp; {article.comp}</li>
                           <li > <i class="far fa-calendar-alt"> &nbsp; </i> {new Date(Date.parse(article.time)).toDateString()}</li>
@@ -60,7 +71,9 @@ export default function SearchNews() {
                             </ul>
                           </li>
                         </ul>
-                        </Link>
+                        </a>
+                        
+                    {/*  </Link>*/}
                       </div>
                       <div className="description">
                         <h5>{article.title}</h5>
