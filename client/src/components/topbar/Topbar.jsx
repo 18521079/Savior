@@ -20,8 +20,7 @@ export default function Topbar() {
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <Link  to="/news"><span className="topbarLink">Diễn đàn</span></Link>
-          <Link to="/profile/:username" ><span className="topbarLink">Trang cá nhân</span></Link>
+         
         </div>
         <div className="topbarIcons">
           

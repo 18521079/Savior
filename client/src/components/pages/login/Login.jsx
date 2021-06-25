@@ -4,6 +4,7 @@ import { CircularProgress } from "@material-ui/core";
 import "../homecss.css";
 import { loginCall } from "../../../apiCalls";
 import { AuthContext } from "../../../context/Authcontext";
+import {Link} from 'react-router-dom';
 
 export default function Login() {
   const email = useRef();
@@ -50,9 +51,11 @@ export default function Login() {
               { isFetching ? <CircularProgress color='white'></CircularProgress> :"Đăng nhập"}
             </button>
             <span className="loginForgot mt-20">Quên mật khẩu?</span>
-            <button className="loginRegisterButton mb5">
+            <Link to ={"/register"}>
+            <button style={{marginLeft:"90px"}} className="loginRegisterButton mb5">
            Tạo tài khoản
             </button>
+            </Link>
           </form>
         </div>
       </div>
