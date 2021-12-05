@@ -1,4 +1,5 @@
-# Savior                                                                                                                                                                                                                                          
+## Đồ án 2, GVHD Nguyễn Thị Thanh Trúc 
+# Savior      
 Application to support health and psychology for students
 
 ### Main feature                                                                                                                                                                  
@@ -12,8 +13,8 @@ Application to support health and psychology for students
 + Backend: Nodejs+ express framework, database: MongoDB                                                                                                                                            
 + Frontend: Reactjs                                                                                                                                                                
                                                                                                                                                             
--Frontend: Nguyễn Thị Khánh Ly                                                                                                                                                    
--Backend: Hà Minh Thành
+-Frontend: Nguyen Thi Khanh Ly                                                                                                                                                 
+-Backend: Ha Minh Thanh
 
 ### Sign in as an expert:                                                                                                                                            
 + Email: khanhly01@gmail.com                                                                                                                                                      
