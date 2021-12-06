@@ -4,98 +4,14 @@ export default function Messenger() {
     <>
       <div className="container-fluid h-100 body-mess">
         <div className="row justify-content-center h-100">
-          <div className="col-md-4 col-xl-3 chat">
-            <div className="card card-mess mb-sm-3 mb-md-0 contacts_card">
-              <div className="card-header">
-                <div className="input-group">
-                  <input
-                    type="text"
-                    placeholder="Tìm kiếm..."
-                    name
-                    className="form-control search"
-                  />
-                  <div className="input-group-prepend">
-                    <span className="input-group-text search_btn">
-                      <i className="fas fa-search" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="card-body contacts_body">
-                <ui className="contacts">
-                  <li className="active-mess">
-                    <div className="d-flex bd-highlight">
-                      <div className="img_cont">
-                        <img
-                          src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
-                          className="rounded-circle user_img"
-                        />
-                        <span className="online_icon" />
-                      </div>
-                      <div className="user_info">
-                        <span>Khánh Ly</span>
-                        <p>Ly đang online</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="d-flex bd-highlight">
-                      <div className="img_cont">
-                        <img
-                          src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg"
-                          className="rounded-circle user_img"
-                        />
-                        <span className="online_icon offline" />
-                      </div>
-                      <div className="user_info">
-                        <span>Bảo Trâm</span>
-                        <p>9 phút trước</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="d-flex bd-highlight">
-                      <div className="img_cont">
-                        <img
-                          src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
-                          className="rounded-circle user_img"
-                        />
-                        <span className="online_icon" />
-                      </div>
-                      <div className="user_info">
-                        <span>Thảo Duyên</span>
-                        <p>Duyên đang online</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="d-flex bd-highlight">
-                      <div className="img_cont">
-                        <img
-                          src="https://static.turbosquid.com/Preview/001214/650/2V/boy-cartoon-3D-model_D.jpg"
-                          className="rounded-circle user_img"
-                        />
-                        <span className="online_icon offline" />
-                      </div>
-                      <div className="user_info">
-                        <span>LyPit</span>
-                        <p>Ly đang online</p>
-                      </div>
-                    </div>
-                  </li>
-                </ui>
-              </div>
-              <div className="card-footer" />
-            </div>
-          </div>
+         
           <div className="col-md-8 col-xl-6 chat">
             <div className="card card-mess">
               <div className="card-header msg_head">
                 <div className="d-flex bd-highlight">
                   <div className="img_cont">
                     <img
-                      src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                      src="assets/person/2.jpeg"
                       className="rounded-circle user_img"
                     />
                     <span className="online_icon" />
