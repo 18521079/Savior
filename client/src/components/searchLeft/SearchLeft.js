@@ -133,30 +133,6 @@ export default function SearchLeft() {
     </a>
   </div>
 
-
-{/* Tags Start */}
-<div className="pb-3">
-  <div className=" py-2 px-4 mb-3 mt3">
-    <h5 className="m-0">Tags</h5>
-  </div>
-  <div className="d-flex flex-wrap m-n1">
-    <a href className="btn btn-sm btn-outline-secondary m-1">Mệt mỏi</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Lo âu</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Đau đầu</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Căng Thẳng</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Sức khỏe</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Đại dịch</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Áp lực</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Ăn uống</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Tập luyện</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Giải trí</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Thư giãn</a>
-    <a href className="btn btn-sm btn-outline-secondary m-1">Từ bỏ</a>
-  </div>
-</div>
-{/* Tags End */}
-
-
 {/* Social Follow Start */}
 <div className="pb-3">
   <div className=" py-2 px-4 mb-3">
